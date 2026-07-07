@@ -1,0 +1,266 @@
+---
+url: "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/extra_configs/self_signed_certificates/"
+title: "Deployment with Self-Signed Certificates | ClearML"
+---
+
+[Skip to main content](https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/extra_configs/self_signed_certificates/#__docusaurus_skipToContent_fallback)
+
+If you ❤️ ️ **ClearML**, ⭐️ us on [GitHub](https://github.com/clearml/clearml)!
+
+On this page
+
+This guide covers how to configure the [AI Application Gateway](https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/appgw) and [ClearML Agents](https://clear.ml/docs/latest/docs/clearml_agent/clearml_agent_deployment_k8s#agent-with-an-enterprise-server)
+to use self-signed or custom SSL certificates.
+
+## AI Application Gateway and ClearML Agent [​](https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/extra_configs/self_signed_certificates/\#ai-application-gateway-and-clearml-agent "Direct link to AI Application Gateway and ClearML Agent")
+
+To configure certificates, update the applicable overrides file:
+
+- For AI Application Gateway: `clearml-app-gateway-values.override.yaml` file
+- For ClearML Agent: `clearml-agent-values.override.yaml` file
+
+```yaml
+# -- Custom certificates
+
+customCertificates:
+
+  # -- Override system crt certificate bundle. Mutual exclusive with extraCerts.
+
+  overrideCaCertificatesCrt:
+
+  # -- Extra certs usable in case of needs of adding more certificates to the standard bundle, Requires root permissions to run update-ca-certificates. Mutual exclusive with overrideCaCertificatesCrt.
+
+  extraCerts:
+
+     - alias: certificateName
+
+       pem: |
+
+         -----BEGIN CERTIFICATE-----
+
+         ###
+
+         -----END CERTIFICATE-----
+```
+
+You have two configuration options:
+
+- [**Replace**](https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/extra_configs/self_signed_certificates/#replace-entire-ca-certificatescrt-file) the entire `ca-certificates.crt` file
+- [**Append**](https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/extra_configs/self_signed_certificates/#append-extra-certificates-to-the-existing-ca-certificatescrt) extra certificates to the existing `ca-certificates.crt`
+
+### Replace Entire ca-certificates.crt File [​](https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/extra_configs/self_signed_certificates/\#replace-entire-ca-certificatescrt-file "Direct link to Replace Entire ca-certificates.crt File")
+
+To replace the whole ca-bundle, provide a concatenated list of all trusted CA certificates in `pem` format as
+they are stored in a standard `ca-certificates.crt`.
+
+```yaml
+# -- Custom certificates
+
+customCertificates:
+
+  # -- Override system crt certificate bundle. Mutual exclusive with extraCerts.
+
+  overrideCaCertificatesCrt: |
+
+    -----BEGIN CERTIFICATE-----
+
+    ### CERT 1
+
+    -----END CERTIFICATE-----
+
+    -----BEGIN CERTIFICATE-----
+
+    ### CERT 2
+
+    -----END CERTIFICATE-----
+
+    -----BEGIN CERTIFICATE-----
+
+    ### CERT 3
+
+    -----END CERTIFICATE-----
+
+   ...
+```
+
+### Append Extra Certificates to the Existing ca-certificates.crt [​](https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/extra_configs/self_signed_certificates/\#append-extra-certificates-to-the-existing-ca-certificatescrt "Direct link to Append Extra Certificates to the Existing ca-certificates.crt")
+
+You can add certificates to the existing CA bundle. Each certificate must have a unique `alias`.
+
+```yaml
+# -- Custom certificates
+
+customCertificates:
+
+  # -- Extra certs usable in case of needs of adding more certificates to the standard bundle, Requires root permissions to run update-ca-certificates. Mutual exclusive with overrideCaCertificatesCrt.
+
+  extraCerts:
+
+     - alias: certificate-name-1
+
+       pem: |
+
+         -----BEGIN CERTIFICATE-----
+
+         ###
+
+         -----END CERTIFICATE-----
+
+     - alias: certificate-name-2
+
+       pem: |
+
+         -----BEGIN CERTIFICATE-----
+
+         ###
+
+         -----END CERTIFICATE-----
+```
+
+### ClearML Agent: Add Certificates to Task Pods [​](https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/extra_configs/self_signed_certificates/\#clearml-agent-add-certificates-to-task-pods "Direct link to ClearML Agent: Add Certificates to Task Pods")
+
+If your workloads need access to these certificates (e.g., for HTTPS requests), configure the agent to inject them into pods:
+
+```yaml
+customCertificates:
+
+  propagateToTasks: true
+```
+
+### Apply Changes [​](https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/extra_configs/self_signed_certificates/\#apply-changes "Direct link to Apply Changes")
+
+To apply the changes, run the update command:
+
+- For AI Application Gateway:
+
+
+
+
+
+```bash
+helm upgrade -i <RELEASE_NAME> -n <WORKLOAD_NAMESPACE> oci://docker.io/clearml/clearml-enterprise-app-gateway --version <CHART_VERSION> -f clearml-app-gateway-values.override.yaml
+```
+
+- For ClearML Agent:
+
+
+
+
+
+```bash
+helm upgrade -i -n <WORKER_NAMESPACE> clearml-enterprise-agent oci://docker.io/clearml/clearml-enterprise-agent -f clearml-agent-values.override.yaml
+```
+
+
+## ClearML Applications (Apps Agent) [​](https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/extra_configs/self_signed_certificates/\#clearml-applications-apps-agent "Direct link to ClearML Applications (Apps Agent)")
+
+ClearML Application instances are executed by a dedicated agent (the Apps Agent), which creates pods for each application
+instance.
+
+To make custom certificates available to these pods, update the control-plane `clearml-values.override.yaml` file under
+the `clearmlApplications` section.
+
+The `basePodTemplate` defines the base pod specification applied to all application pods created by the Apps Agent.
+
+Example configuration:
+
+```yaml
+clearmlApplications:
+
+  basePodTemplate:
+
+    initContainers:
+
+      - command:
+
+        - /bin/sh
+
+        - -c
+
+        - update-ca-certificates
+
+        image: allegroai/clearml-enterprise-agent-k8s-base:<AGENT-VERSION-AVAILABLE-ON-REPO>
+
+        imagePullPolicy: IfNotPresent
+
+        name: init-task
+
+        volumeMounts:
+
+          - name: etc-ssl-certs
+
+            mountPath: "/etc/ssl/certs"
+
+          - name: clearml-extra-ca-certs
+
+            mountPath: "/usr/local/share/ca-certificates"
+
+    env:
+
+      - name: REQUESTS_CA_BUNDLE
+
+        value: "/etc/ssl/certs/ca-certificates.crt"
+
+      - name: SSL_CERT_FILE
+
+        value: "/etc/ssl/certs/ca-certificates.crt"
+
+    volumeMounts:
+
+      - name: etc-ssl-certs
+
+        mountPath: "/etc/ssl/certs"
+
+    volumes:
+
+      - name: etc-ssl-certs
+
+        emptyDir: {}
+
+      - name: clearml-extra-ca-certs
+
+        projected:
+
+          defaultMode: 420
+
+          sources:
+
+          # LIST HERE CONFIGMAPS CREATED BY THE APPS AGENT IN THE CONTROL PLANE CHART, THE CARDINALITY DEPENDS ON THE NUMBER OF CERTS PROVIDED.
+
+          - configMap:
+
+              name: clearml-enterprise-apps-custom-ca-0
+
+          - configMap:
+
+              name: clearml-enterprise-apps-custom-ca-1
+
+  customCertificates:
+
+    # -- Override system crt certificate bundle. Mutual exclusive with extraCerts.
+
+    overrideCaCertificatesCrt:
+
+    # -- Extra certs usable in case of needs of adding more certificates to the standard bundle, Requires root permissions to run update-ca-certificates. Mutual exclusive with overrideCaCertificatesCrt.
+
+    extraCerts:
+
+      []
+
+      # - alias: certificateName
+
+      #   pem: |
+
+      #     -----BEGIN CERTIFICATE-----
+
+      #     ###
+
+      #     -----END CERTIFICATE-----
+```
+
+- [AI Application Gateway and ClearML Agent](https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/extra_configs/self_signed_certificates/#ai-application-gateway-and-clearml-agent)
+  - [Replace Entire ca-certificates.crt File](https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/extra_configs/self_signed_certificates/#replace-entire-ca-certificatescrt-file)
+  - [Append Extra Certificates to the Existing ca-certificates.crt](https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/extra_configs/self_signed_certificates/#append-extra-certificates-to-the-existing-ca-certificatescrt)
+  - [ClearML Agent: Add Certificates to Task Pods](https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/extra_configs/self_signed_certificates/#clearml-agent-add-certificates-to-task-pods)
+  - [Apply Changes](https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/extra_configs/self_signed_certificates/#apply-changes)
+- [ClearML Applications (Apps Agent)](https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/extra_configs/self_signed_certificates/#clearml-applications-apps-agent)

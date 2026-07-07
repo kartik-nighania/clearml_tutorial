@@ -1,0 +1,42 @@
+---
+url: "https://clear.ml/docs/latest/docs/release_notes/sdk/open_source/ver_1_17/"
+title: "Version 1.17 | ClearML"
+---
+
+[Skip to main content](https://clear.ml/docs/latest/docs/release_notes/sdk/open_source/ver_1_17/#__docusaurus_skipToContent_fallback)
+
+If you ❤️ ️ **ClearML**, ⭐️ us on [GitHub](https://github.com/clearml/clearml)!
+
+On this page
+
+### ClearML 1.17.1 [​](https://clear.ml/docs/latest/docs/release_notes/sdk/open_source/ver_1_17/\#clearml-1171 "Direct link to ClearML 1.17.1")
+
+**New Features and Bug Fixes**
+
+- Fix Windows `PermissionError` (`WinError 5`) while uploading datasets ( [#1348](https://github.com/clearml/clearml/issues/1348))
+- Fix offline mode clearml import ( [#1363](https://github.com/clearml/clearml/issues/1363))
+- Add missing `Task.mark_stop_request()`, requesting an agent to stop a running task gracefully
+- Add support for streaming in router
+- Add async callback support to router
+- Fix router did not pass timeout
+
+### ClearML 1.17.0 [​](https://clear.ml/docs/latest/docs/release_notes/sdk/open_source/ver_1_17/\#clearml-1170 "Direct link to ClearML 1.17.0")
+
+**New Features**
+
+- Add programmatic pipeline clone using `PipelineController.create()` and `PipelineController.clone()` ( [#1353](https://github.com/clearml/clearml/issues/1353))
+- Add Python 3.13 support
+- Add support for local imports in pipeline steps
+- Add support for the ClearML HTTP router using `Task.get_http_router()`
+- Add TCP protocol support to `Task.request_external_endpoint()`
+- Update `pyjwt` version
+
+**Bug Fixes**
+
+- Fix slow handling of cached files with large `cache_file_limit` ( [#1352](https://github.com/clearml/clearml/issues/1352))
+- Fix pipeline crash when repository is set to a directory
+- Fix token is not renewed when using an external token (`CLEARML_AUTH_TOKEN`) and no credentials
+- Fix external files don't download from parent datasets if they have been modified/removed in the child dataset
+
+- [ClearML 1.17.1](https://clear.ml/docs/latest/docs/release_notes/sdk/open_source/ver_1_17/#clearml-1171)
+- [ClearML 1.17.0](https://clear.ml/docs/latest/docs/release_notes/sdk/open_source/ver_1_17/#clearml-1170)

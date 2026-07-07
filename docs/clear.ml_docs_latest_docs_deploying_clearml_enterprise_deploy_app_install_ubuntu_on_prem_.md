@@ -1,0 +1,116 @@
+---
+url: "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/app_install_ubuntu_on_prem/"
+title: "Application Installation on On-Prem and VPC Servers | ClearML"
+---
+
+[Skip to main content](https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/app_install_ubuntu_on_prem/#__docusaurus_skipToContent_fallback)
+
+If you ❤️ ️ **ClearML**, ⭐️ us on [GitHub](https://github.com/clearml/clearml)!
+
+On this page
+
+Enterprise Feature
+
+UI application deployment is available under the ClearML Enterprise plan.
+
+ClearML Applications are like plugins that allow you to manage ML workloads and automatically run recurring workflows
+without any coding. Applications are installed on top of the ClearML Server.
+
+## Requirements [​](https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/app_install_ubuntu_on_prem/\#requirements "Direct link to Requirements")
+
+To run application you will need the following:
+
+- RAM: Make sure you have at least 400 MB of RAM per application instance.
+- Applications Service: Make sure that the applications agent service is up and running on your server:
+  - If you are using a `docker-compose` solution, make sure that the clearml-apps-agent service is running.
+  - If you are using a Kubernetes cluster, check for the clearml-clearml-enterprise-apps component.
+- Installation Files: Each application has its installation zip file. Make sure you have the relevant files for the
+applications you wish to install.
+- Installation Script - See below
+
+## Air-Gapped Environments [​](https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/app_install_ubuntu_on_prem/\#air-gapped-environments "Direct link to Air-Gapped Environments")
+
+For Air-Gapped installations you need to copy docker images to the local registry and then update the application
+configuration files to use this repository. This can be achieved by using the `convert_image_registry.py` script with
+the `--repo` flag. For example:
+
+```text
+python convert_image_registry.py \
+
+  --apps-dir /path/to/apps/ \
+
+  --artifactory local-artifactory/clearml_apps
+```
+
+The script will change the application zip files to point to the new registry, and will output the list of containers
+that need to be copied to the local registry. For example:
+
+```text
+make sure allegroai/clearml-apps:hpo-1.10.0-1062 was added to local_registry/clearml-apps
+```
+
+## Installing on ClearML Server [​](https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/app_install_ubuntu_on_prem/\#installing-on-clearml-server "Direct link to Installing on ClearML Server")
+
+The `upload_apps.py` script handles uploading the app packages to the ClearML Server. It requires Python3.
+
+To see the options, run:
+
+```commandline
+python3 upload_apps.py --help
+```
+
+### Credentials [​](https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/app_install_ubuntu_on_prem/\#credentials "Direct link to Credentials")
+
+The script requires user and password (`USER_KEY`/`USER_SECRET` in the example below). These can be taken from
+the credentials of an admin user, which can be generated in the ClearML web application.
+
+### Host [​](https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/app_install_ubuntu_on_prem/\#host "Direct link to Host")
+
+For the host, supply the `apiserver` address. If running locally on the server, you can use `localhost:8008`.
+
+### Uploading a Single Application [​](https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/app_install_ubuntu_on_prem/\#uploading-a-single-application "Direct link to Uploading a Single Application")
+
+```commandline
+python3 upload_apps.py \
+
+  --host <APISERVER_URL> \
+
+  --user <USER_KEY> \
+
+  --password <USER_SECRET> \
+
+  --files "YOUR_APP.zip"
+```
+
+### Uploading Multiple Applications [​](https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/app_install_ubuntu_on_prem/\#uploading-multiple-applications "Direct link to Uploading Multiple Applications")
+
+If you wish to install more than one app you can use the `--dir` instead of the `--files` argument:
+
+```commandline
+python3 upload_apps.py \
+
+  --host <APISERVER_URL> \
+
+  --user <USER_KEY> \
+
+  --password <USER_SECRET> \
+
+  --dir "DIRECTORY_CONTAINING_APPS_ZIP_FILES"
+```
+
+## Application Instance Visibility [​](https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/app_install_ubuntu_on_prem/\#application-instance-visibility "Direct link to Application Instance Visibility")
+
+By default, all users can view all application instances in the ClearML UI. You can configure different visibility
+policies globally or for specific applications, for example to restrict access to the application owner or allow sharing
+only with selected user groups.
+
+For more information, see [Application Instance Visibility Policy](https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/app_visibility_policy).
+
+- [Requirements](https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/app_install_ubuntu_on_prem/#requirements)
+- [Air-Gapped Environments](https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/app_install_ubuntu_on_prem/#air-gapped-environments)
+- [Installing on ClearML Server](https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/app_install_ubuntu_on_prem/#installing-on-clearml-server)
+  - [Credentials](https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/app_install_ubuntu_on_prem/#credentials)
+  - [Host](https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/app_install_ubuntu_on_prem/#host)
+  - [Uploading a Single Application](https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/app_install_ubuntu_on_prem/#uploading-a-single-application)
+  - [Uploading Multiple Applications](https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/app_install_ubuntu_on_prem/#uploading-multiple-applications)
+- [Application Instance Visibility](https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/app_install_ubuntu_on_prem/#application-instance-visibility)

@@ -1,0 +1,356 @@
+---
+url: "https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_resource_configs/"
+title: "Resource Configuration | ClearML"
+---
+
+[Skip to main content](https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_resource_configs/#__docusaurus_skipToContent_fallback)
+
+If you ❤️ ️ **ClearML**, ⭐️ us on [GitHub](https://github.com/clearml/clearml)!
+
+On this page
+
+Enterprise Feature
+
+Resource Configuration is available under the ClearML Enterprise plan.
+
+Administrators can define [Resource Policies](https://clear.ml/docs/latest/docs/webapp/resource_policies) to implement resource quotas and
+reservations for different user groups to prioritize workload usage across available resources.
+
+Under the **Resource Configuration** section, administrators define the available resources and the way in which they
+will be allocated to different workloads.
+
+![Resource configuration page](https://clear.ml/docs/latest/assets/images/resource_configuration-02d9fa4c399866ac7347f0f6610175f7.png#light-mode-only)![Resource configuration page](https://clear.ml/docs/latest/assets/images/resource_configuration_dark-2e8410faadfd2eb2e6d591ef13b718de.png#dark-mode-only)
+
+The Resource Configuration settings page shows the [currently provisioned](https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_resource_configs/#applying-resource-configuration) configuration:
+the defined resource pools, resource profiles, and the resource allocation architecture.
+
+## Resource Pools [​](https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_resource_configs/\#resource-pools "Direct link to Resource Pools")
+
+A resource pool is an aggregation of resources available for use, such as a Kubernetes cluster or a GPU SuperPOD.
+Administrators specify the total number of resources available in each pool. The resource policy manager ensures
+workload assignment up to the available number of resources.
+
+Administrators control the execution priority within a pool across the resource profiles making use of it (e.g. if jobs
+of profile A and jobs of profile B currently need to run in a pool, allocate resources for profile A jobs first or vice
+versa).
+
+The resource pool cards are displayed on the top of the Resource Configuration settings page. Each card displays the
+following information:
+
+![Resource pool card](https://clear.ml/docs/latest/assets/images/resource_configuration_pool_card-0fb94c1528a2510e29f47b19b8943aa4.png#light-mode-only)![Resource pool card](https://clear.ml/docs/latest/assets/images/resource_configuration_pool_card_dark-3d81bae01609371c2b3322c292a61b5e.png#dark-mode-only)
+
+- Pool name
+- Number of resources currently in use out of the total available resources
+- Execution Priority - List of [linked profiles](https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_resource_configs/#connecting-profiles-to-pools) in order of execution priority.
+
+### Assigning Resources to Pools [​](https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_resource_configs/\#assigning-resources-to-pools "Direct link to Assigning Resources to Pools")
+
+To utilize a resource pool for task execution, ClearML agents are assigned to the pool servicing its specific queues.
+Tasks assigned by the resource policy manager to that pool will be sent to these queues for execution.
+
+To configure an agent for a resource pool:
+
+1. Open the resource pool’s information panel by clicking ![Info](https://clear.ml/docs/latest/icons/ico-info.svg) on the pool card. This displays:
+
+
+   - Resource profiles linked to the pool
+   - Resource allocation per task
+   - Correlated Queue information
+
+![Resource_pool_info](https://clear.ml/docs/latest/assets/images/resource_pool_info-9d43cd4eb58bf953835e0b6195596d34.png#light-mode-only)![Resource_pool_info](https://clear.ml/docs/latest/assets/images/resource_pool_info_dark-b0c01909408df2767348423313fd96ad.png#dark-mode-only)
+
+2. Copy the ID for the queue you want the agent to service.
+
+3. Configure an agent to listen to the queue. For example, on Kubernetes:
+
+
+
+
+
+```yaml
+agentk8sglue:
+
+     queues:
+
+       <pool_queue_id>:   # Paste the Queue ID from the Resource Pool card here
+
+         templateOverrides:
+
+          resources:
+
+            limits:
+
+              nvidia.com/gpu: 2
+```
+
+
+
+
+
+
+
+
+
+
+
+important
+
+
+
+
+
+The Resource Manager performs logical scheduling and accounting only. It does not control the actual hardware
+allocated to a task.
+
+
+
+You must explicitly configure the ClearML Agent (for example, by setting GPU limits in `templateOverrides`) to match
+the resource profile. Otherwise, tasks may be scheduled correctly but still run with incorrect resource allocation.
+
+
+Tasks assigned to the resource profile connected to this pool will now be executed by your agent..
+
+## Resource Profiles [​](https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_resource_configs/\#resource-profiles "Direct link to Resource Profiles")
+
+Resource profiles represent the resource consumption requirements of jobs, such as the number of GPUs needed. They are
+the interface that administrators use to provide users with access to the available resource pools based on their job
+resource requirements via [Resource Policies](https://clear.ml/docs/latest/docs/webapp/resource_policies).
+
+A resource profile can have a fixed [resource allotment](https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_resource_configs/#resource-allotment) (i.e. all jobs running through the profile will be assigned that
+number of resources) or let tasks specify their own resource requirements.
+
+Administrators can control the resource pool allocation precedence within a profile (e.g. only run jobs on `pool B` if
+`pool A` cannot currently satisfy the its resource requirements).
+
+Administrators can control the queuing priority within a profile across resource policies making use of it (e.g. if the
+R&D team and DevOps team both have pending jobs - run the R&D team's jobs first or vice versa).
+
+The resource profile cards are displayed on the bottom of the Resource Configuration settings page. Each card displays
+the following information:
+
+![Resource profile card](https://clear.ml/docs/latest/assets/images/resource_configuration_profile_card-ec185f6dfb114103e8fb5a79cc9b5046.png#light-mode-only)
+
+![Resource profile card](https://clear.ml/docs/latest/assets/images/resource_configuration_profile_card_dark-69e7268f60512e9babd703c4e68e82e8.png#dark-mode-only)
+
+- Profile name
+- ![Number of resources](https://clear.ml/docs/latest/icons/ico-resource-number.svg) \- Number
+of resources allocated to jobs in this profile
+- List of [pool links](https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_resource_configs/#connecting-profiles-to-pools)
+- ![Queued jobs](https://clear.ml/docs/latest/icons/ico-queued-jobs.svg) \- Number of currently pending jobs
+- ![Running jobs](https://clear.ml/docs/latest/icons/ico-running-jobs.svg) \- Number of currently running jobs
+- Number of resource policies. Click to open resource policy list and to order queuing priority.
+
+### Resource Allotment [​](https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_resource_configs/\#resource-allotment "Direct link to Resource Allotment")
+
+Resource allotment is the number of resources allocated to each job running under a resource profile. The profile can
+have a [fixed](https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_resource_configs/#fixed-requirement) or [dynamic](https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_resource_configs/#dynamic-resource-capacity) resource allotment.
+
+#### Fixed Requirement [​](https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_resource_configs/\#fixed-requirement "Direct link to Fixed Requirement")
+
+Each job uses the fixed number of resources you set in `Resource Allotment` (for example, 4 GPUs per job).
+
+This is best suited for workloads where all jobs have similar resource requirements.
+
+#### Dynamic Resource Capacity [​](https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_resource_configs/\#dynamic-resource-capacity "Direct link to Dynamic Resource Capacity")
+
+Dynamic Resource Capacity allows each job to define its own resource requirement, through a task parameter. This is useful
+when jobs within the same profile require different amounts of resources, avoiding the need to create multiple similar
+profiles.
+
+When a job is run under a dynamic capacity resource profile, the resource manager will look for the specified parameter
+for the job’s resource requirement. If no such value is found, the task will be considered as requiring the profiles
+default resource allotment
+
+For more information see instructions for [creating a resource profile](https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_resource_configs/#resource-profile).
+
+## Example Workflow [​](https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_resource_configs/\#example-workflow "Direct link to Example Workflow")
+
+You have GPUs spread across a local H100 and additional bare metal servers, as well as on AWS (managed
+by an autoscaler). Assume that currently most of your resources are already assigned to jobs, and only 16 resources are available: 8 in the
+H100 resource pool and 8 in the Bare Metal pool:
+
+![Example resource pools](https://clear.ml/docs/latest/assets/images/resource_example_pools-274c868bf6d6e32693b284d5352cd5d3.png#light-mode-only)![Example resource pools](https://clear.ml/docs/latest/assets/images/resource_example_pools_dark-0925d7f30c91e02a205e7c8f48a9f37e.png#dark-mode-only)
+
+Teams' jobs have varying resource requirements of 0.5, 2, 4, and 8 GPUs. Resource profiles are defined to reflect these:
+
+![Example resource profiles](https://clear.ml/docs/latest/assets/images/resource_example_profile-8dc65e358e1538d71e7da7c31e483cc1.png#light-mode-only)![Example resource profiles](https://clear.ml/docs/latest/assets/images/resource_example_profile_dark-b4defaa6ca11c5b95a47ebb8669fdb8f.png#dark-mode-only)
+
+The different jobs will be routed to different resource pools by connecting the profiles to the resource pools. Jobs
+enqueued through the profiles will be run in the pools where there are available resources in order of their priority.
+For example, the H100 pool will run jobs with the following precedence: 2 GPU jobs first, then 4 GPU ones, then 8 GPU,
+and lastly 0.5 GPU.
+
+![Example profile priority](https://clear.ml/docs/latest/assets/images/resource_example_profile_priority-6d643255abc33fde87a76541fe7190cd.png#light-mode-only)![Example profile priority](https://clear.ml/docs/latest/assets/images/resource_example_profile_priority_dark-aa45bcc23c91d12f0ec0fe55ee6368ef.png#dark-mode-only)
+
+Resource policies are implemented for two teams:
+
+- Dev team
+- Research Team
+
+Each team has a resource policy configured with 8 reserved resources and a 16 resource limit. Both teams make use of the
+4xGPU profile (i.e. each job running through this profile requires 4 resources).
+
+![Example resource policy](https://clear.ml/docs/latest/assets/images/resource_example_policy-a279c540f04b18124047b5ac1822003c.png#light-mode-only)![Example resource policy](https://clear.ml/docs/latest/assets/images/resource_example_policy_dark-57b35c3422ca70360101b087902d7fc2.png#dark-mode-only)
+
+The Dev team is prioritized over the Research team by placing it higher in the Resource Profile's Policies Priority list:
+
+![Example resource policy priority](https://clear.ml/docs/latest/assets/images/resource_example_policy_priority-79c80d52bbccfa3366d146bc70c91092.png#light-mode-only)![Example resource policy priority](https://clear.ml/docs/latest/assets/images/resource_example_policy_priority_dark-aff46228d45a0e0d145c98f7ab730e77.png#dark-mode-only)
+
+Both the Dev team and the Research team enqueue four 4-resource jobs each: Dev team jobs will be allocated resources
+first. The `4xGPU` resource profile is connected to two resource pools: `Bare Metal Low END GPUs` (with the
+`4 GPU Low End` link) and `H100 Half a Superpod` (with the `4 GPU H100 link`).
+
+![Example resource profile-pool connections](https://clear.ml/docs/latest/assets/images/resource_example_profile_pool_links-b0a564750a8c328f1174f9e49c5ca783.png#light-mode-only)![Example resource profile-pool connections](https://clear.ml/docs/latest/assets/images/resource_example_profile_pool_links_dark-f627ae36098a4adc235eac50be3db902.png#dark-mode-only)
+
+Resources are assigned from the `Bare Metal` pool first (precedence set on the resource profile card):
+
+![Example resource pool precedence](https://clear.ml/docs/latest/assets/images/resource_example_pool_priority-588b968bf872456855ddb80cf890b9fa.png#light-mode-only)![Example resource pool precedence](https://clear.ml/docs/latest/assets/images/resource_example_pool_priority_dark-49a5eaa4423c5d873d54e6efc279a549.png#dark-mode-only)
+
+If the first pool cannot currently satisfy the profile’s resource requirements, resources are assigned from the next
+listed pool. Let's look at the first pool in the image below. Notice that the pool has 8 available resources, therefore
+it can run two 4-resource jobs.
+
+![Example resource pool card](https://clear.ml/docs/latest/assets/images/resource_example_pool_card-de9382fa46dc37faa2811bc1f058ad58.png#light-mode-only)![Example resource pool card](https://clear.ml/docs/latest/assets/images/resource_example_pool_card_dark-a82de01e21602be8dae3869d535c6f40.png#dark-mode-only)
+
+Since the Bare Metal pool does not have any more available resources, additional jobs will be assigned resources from
+the next pool that the Resource Profile is connected to. The H100 pool has 8 available resources. There are still 2 jobs
+pending from the Dev team requiring 8 resources in total, and 4 jobs from the Research team requiring 16 resources in
+total. In order to honor the Research team’s resource reservation, its first two jobs will be assigned the required 8
+resources from the H100 pool.
+
+All available resources having been assigned - 2 jobs of each team will remain pending until some of the currently
+running jobs finish and resources become available.
+
+## Applying Resource Configuration [​](https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_resource_configs/\#applying-resource-configuration "Direct link to Applying Resource Configuration")
+
+Administrators can globally activate/deactivate resource policy management. To enable the currently provisioned
+configuration, click on the `Enable resource management` toggle. Enabling resource management will service the policy
+queues according to the provisioned resource profile and pool assignments. Disabling the resource management will stop
+serving the policy queues. Tasks on these queues will remain pending until resource policy management is reenabled.
+
+Administrators can add, edit, delete, and connect resource pools and profiles in the Resource Configuration settings
+page.
+
+To make any change (create, delete, or modify a component) to the resource configuration, follow the following steps:
+
+1. Click **Open Editor** to go into Editing mode
+2. After making the desired changes you have the following options:
+   - **Save** \- Save the changes you made. These changes will not be applied until you click on **Provision**
+   - **Validate** \- Check whether the saved configuration is valid and can be provisioned. If the configuration is valid,
+     a confirmation message is displayed. If the configuration is invalid, validation fails and displays the reason (e.g.,
+     resource profiles that are not linked to any resource pool). Validation does **not** apply any changes. This option
+     is available only after the configuration has been saved.
+   - **Provision** \- Apply the resource policy’s saved changes
+   - **Reset Configuration** \- Set the editor to the currently provisioned values. This will delete any unprovisioned
+     changes (both saved and unsaved)
+3. Click **Exit** to leave Editor mode. The page will show the provisioned configuration. Unprovisioned saved changes will
+still be available in Editor mode.
+
+### Resource Pool [​](https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_resource_configs/\#resource-pool "Direct link to Resource Pool")
+
+**To create a resource pool:**
+
+1. Click **\+ Add Pool**
+2. In the **Create Pool** modal, input:
+
+   - Name - The resource pool’s name. This will appear in the Pool’s information card in the Resource Configuration settings page
+   - Number of Resources - Number of resources available in this pool
+   - Description - Optional free form text for additional descriptive information
+3. Click **Create**
+
+Sizing Guidance
+
+The "Number of Resources" value should match the physical capacity of the underlying cluster, expressed in whole GPUs.
+For example, a cluster of 2 servers with 8 GPUs each should be configured as a pool of 16, regardless of whether jobs will consume whole GPUs, fractional GPUs or MIG slices.
+Compute resources draw down from the pool are controlled by the profile's Resource Allotment (Resource Profiles) e.g. 1 for a full GPU, 0.5 for a half, or approximately 0.143 (1/7) for a 1g.10gb MIG slice.
+Keeping the pool sized to physical quantities ensures the accounting layer stays aligned with real hardware across all consumption patterns.
+
+**To modify a resource pool**
+
+1. Click ![Menu](https://clear.ml/docs/latest/icons/ico-bars-menu.svg) on the relevant
+resource pool card **>** click **Edit**
+2. In the **Edit Pool** modal, change the pool’s name, number of resources, or description
+3. Click **Save**
+
+You can also change the Execution Priority of the [linked resource profiles](https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_resource_configs/#connecting-profiles-to-pools). Click and
+drag the profile connection anchor ![Resourch anchor](https://clear.ml/docs/latest/icons/ico-resource-anchor.svg)
+to change its position in the order of priority.
+
+### Resource Profile [​](https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_resource_configs/\#resource-profile "Direct link to Resource Profile")
+
+**To create a resource profile:**
+
+1. Click **\+ Add Profile**
+
+2. In the **Create Profile** modal, input:
+   - Name - The resource profile’s name. This will appear in the profile’s information card in the Resource Configuration settings page
+   - Resource Allotment - Number of resources allocated to each job running in this profile
+   - Dynamic Resource Capacity - Allow each job to define its own resource requirement through a task parameter (for
+     more information, see [Dynamic Resource Capacity](https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_resource_configs/#dynamic-resource-capacity)). When enabled, the following options
+     are available:
+
+     - Task Configuration Parameter - The task parameter used to retrieve the job’s resource usage at runtime. Supported
+       configuration parameters:
+
+
+       - `runtime.*`
+       - `hyperparams.*`
+       - `configuration.*`
+
+For example, `runtime.gpus_request`, `hyperparams.Args.cost`, or `configuration.test`.
+
+     - Default Resource Allotment - The resource requirement for jobs with no valid value under the specified parameter
+3. Click **Create**
+
+
+**To modify a resource profile:**
+
+1. Click ![Menu](https://clear.ml/docs/latest/icons/ico-bars-menu.svg) on the relevant
+resource profile card > click **Edit**
+2. In the **Edit Profile** modal, change the pool's name, number of resources, or description
+3. Click **Save**
+
+To control which pool's resources will be assigned first, click and drag the pool connection anchor ![connection anchor](https://clear.ml/docs/latest/icons/ico-resource-anchor.svg)
+to change its position in order of priority.
+
+You can also change the Execution Priority of the resource policies making use of this profile. Open the policy list,
+then click the policy anchor ![policy anchor](https://clear.ml/docs/latest/icons/ico-drag-vertical.svg)
+and drag the policy to change its position in order of priority.
+
+**To delete a resource profile:**
+
+1. Click ![Menu](https://clear.ml/docs/latest/icons/ico-bars-menu.svg) on the relevant resource pool card
+2. Click Delete
+
+### Connecting Profiles to Pools [​](https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_resource_configs/\#connecting-profiles-to-pools "Direct link to Connecting Profiles to Pools")
+
+Connect a resource profile to a resource pool to allow jobs assigned to the profile to make use of the pool’s resources.
+
+**To connect a profile to a pool:**
+
+1. Click **Open Editor**
+2. Drag the ![Profile-pool link](https://clear.ml/docs/latest/icons/ico-profile-link.svg)
+of the relevant profile to the resource pool you want to connect the profile to. This opens the **Connect Profile** modal
+3. In the **Connect Profile** modal, input a name for this connection. This connection name will appear on the profile
+card
+
+The settings page will show a line linking the profile and the pool cards. The linked profile appears on the pool card,
+showing its place in the order of execution. To change the profile's priority placement, drag its connection anchor ![connection anchor](https://clear.ml/docs/latest/icons/ico-resource-anchor.svg)
+to a new position.
+
+**To disconnect a profile from a pool:**
+
+1. Click **Open Editor**
+2. On the relevant profile card, hover over connection name and click `X`
+
+Jobs assigned to this resource profile will no longer be able to utilize the pool’s resources.
+
+- [Resource Pools](https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_resource_configs/#resource-pools)
+  - [Assigning Resources to Pools](https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_resource_configs/#assigning-resources-to-pools)
+- [Resource Profiles](https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_resource_configs/#resource-profiles)
+  - [Resource Allotment](https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_resource_configs/#resource-allotment)
+- [Example Workflow](https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_resource_configs/#example-workflow)
+- [Applying Resource Configuration](https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_resource_configs/#applying-resource-configuration)
+  - [Resource Pool](https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_resource_configs/#resource-pool)
+  - [Resource Profile](https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_resource_configs/#resource-profile)
+  - [Connecting Profiles to Pools](https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_resource_configs/#connecting-profiles-to-pools)

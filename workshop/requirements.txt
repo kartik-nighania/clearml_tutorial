@@ -1,0 +1,29 @@
+# ClearML PlantVillage workshop — training deps installed INTO the agent's container.
+#
+# hour2_finetune_vit.py calls task.set_packages("requirements.txt"), so clearml-agent installs these
+# into the HuggingFace GPU image at run time. torch/transformers are already in that image (loose >=
+# pins => skipped); only the extras below actually install. NOT installed in Colab.
+#
+# In COLAB you only need:  pip install clearml transformers
+#   (torch, numpy, pandas, matplotlib, seaborn, scikit-learn, pillow already ship with Colab;
+#    the rest below runs on the agent, never in the notebook.)
+#
+# Pinned loosely on purpose: this is a teaching lab, not a reproducible research build.
+
+clearml>=1.16
+clearml-agent>=1.9          # only needed on the VM if you also run an agent from here
+
+# training / model
+torch>=2.1
+torchvision>=0.16
+transformers[torch]>=4.38
+datasets>=2.18
+accelerate>=0.27
+evaluate>=0.4
+scikit-learn>=1.3           # accuracy / confusion matrix
+
+# EDA + reporting
+matplotlib>=3.7
+seaborn>=0.13
+pandas>=2.0
+pillow>=10.0

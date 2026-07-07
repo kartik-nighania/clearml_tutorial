@@ -1,0 +1,3494 @@
+[
+ {
+  "file": "clear.ml_docs_latest_docs_.md",
+  "title": "What is ClearML? | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/",
+  "path": ""
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_apps_clearml_param_search_.md",
+  "title": "ClearML Parameter Search CLI (HPO) | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/apps/clearml_param_search/",
+  "path": "apps/clearml_param_search"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_apps_clearml_session_.md",
+  "title": "ClearML Session CLI | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/apps/clearml_session/",
+  "path": "apps/clearml_session"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_apps_clearml_task_.md",
+  "title": "ClearML Task CLI | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/apps/clearml_task/",
+  "path": "apps/clearml_task"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_best_practices_data_best_practices_.md",
+  "title": "Best Practices | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/best_practices/data_best_practices/",
+  "path": "best_practices/data_best_practices"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_best_practices_data_scientist_best_practices_.md",
+  "title": "Best Practices | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/best_practices/data_scientist_best_practices/",
+  "path": "best_practices/data_scientist_best_practices"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_best_practices_mlops_best_practices_.md",
+  "title": "Best Practices | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/best_practices/mlops_best_practices/",
+  "path": "best_practices/mlops_best_practices"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_build_interactive_models_.md",
+  "title": "Build Interactive Model Demos | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/build_interactive_models/",
+  "path": "build_interactive_models"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_agent_.md",
+  "title": "ClearML Agent | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_agent/",
+  "path": "clearml_agent"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_agent_clearml_agent_bootstrap_.md",
+  "title": "ClearML Agent Bootstrap | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_agent/clearml_agent_bootstrap/",
+  "path": "clearml_agent/clearml_agent_bootstrap"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_agent_clearml_agent_conditional_template_.md",
+  "title": "Conditional Templates | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_agent/clearml_agent_conditional_template/",
+  "path": "clearml_agent/clearml_agent_conditional_template"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_agent_clearml_agent_custom_workload_.md",
+  "title": "Custom Workload Configuration (K8s) | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_agent/clearml_agent_custom_workload/",
+  "path": "clearml_agent/clearml_agent_custom_workload"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_agent_clearml_agent_data_caching_.md",
+  "title": "ClearML Data Cache | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_agent/clearml_agent_data_caching/",
+  "path": "clearml_agent/clearml_agent_data_caching"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_agent_clearml_agent_deployment_bare_metal_.md",
+  "title": "Bare Metal/Virtual Machines | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_agent/clearml_agent_deployment_bare_metal/",
+  "path": "clearml_agent/clearml_agent_deployment_bare_metal"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_agent_clearml_agent_deployment_k8s_.md",
+  "title": "Kubernetes | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_agent/clearml_agent_deployment_k8s/",
+  "path": "clearml_agent/clearml_agent_deployment_k8s"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_agent_clearml_agent_deployment_slurm_.md",
+  "title": "Slurm (Native) | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_agent/clearml_agent_deployment_slurm/",
+  "path": "clearml_agent/clearml_agent_deployment_slurm"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_agent_clearml_agent_deployment_slurm_pyxis_.md",
+  "title": "Slurm with Pyxis | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_agent/clearml_agent_deployment_slurm_pyxis/",
+  "path": "clearml_agent/clearml_agent_deployment_slurm_pyxis"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_agent_clearml_agent_deployment_slurm_singularity_.md",
+  "title": "Slurm with Singularity | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_agent/clearml_agent_deployment_slurm_singularity/",
+  "path": "clearml_agent/clearml_agent_deployment_slurm_singularity"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_agent_clearml_agent_dynamic_gpus_.md",
+  "title": "Dynamic GPU Allocation | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_agent/clearml_agent_dynamic_gpus/",
+  "path": "clearml_agent/clearml_agent_dynamic_gpus"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_agent_clearml_agent_env_caching_.md",
+  "title": "Python Virtual Environments | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_agent/clearml_agent_env_caching/",
+  "path": "clearml_agent/clearml_agent_env_caching"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_agent_clearml_agent_env_var_.md",
+  "title": "ClearML Agent Environment Variables | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_agent/clearml_agent_env_var/",
+  "path": "clearml_agent/clearml_agent_env_var"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_agent_clearml_agent_execution_env_.md",
+  "title": "Execution Environments | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_agent/clearml_agent_execution_env/",
+  "path": "clearml_agent/clearml_agent_execution_env"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_agent_clearml_agent_fractional_gpus_.md",
+  "title": "Fractional GPUs | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_agent/clearml_agent_fractional_gpus/",
+  "path": "clearml_agent/clearml_agent_fractional_gpus"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_agent_clearml_agent_hf_caching_.md",
+  "title": "HuggingFace Cache | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_agent/clearml_agent_hf_caching/",
+  "path": "clearml_agent/clearml_agent_hf_caching"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_agent_clearml_agent_nim_caching_.md",
+  "title": "NIM Cache | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_agent/clearml_agent_nim_caching/",
+  "path": "clearml_agent/clearml_agent_nim_caching"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_agent_clearml_agent_nvcr_.md",
+  "title": "NVCR Access | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_agent/clearml_agent_nvcr/",
+  "path": "clearml_agent/clearml_agent_nvcr"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_agent_clearml_agent_orch_dash_k8s_.md",
+  "title": "Orchestration Dashboard Customization (K8s) | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_agent/clearml_agent_orch_dash_k8s/",
+  "path": "clearml_agent/clearml_agent_orch_dash_k8s"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_agent_clearml_agent_ref_.md",
+  "title": "ClearML Agent CLI | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_agent/clearml_agent_ref/",
+  "path": "clearml_agent/clearml_agent_ref"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_agent_clearml_agent_services_mode_.md",
+  "title": "Services Mode | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_agent/clearml_agent_services_mode/",
+  "path": "clearml_agent/clearml_agent_services_mode"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_agent_clearml_agent_slurm_impersonation_.md",
+  "title": "Slurm User Impersonation | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_agent/clearml_agent_slurm_impersonation/",
+  "path": "clearml_agent/clearml_agent_slurm_impersonation"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_agent_clearml_agent_string_template_.md",
+  "title": "Custom Pod Manifests with String Templates | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_agent/clearml_agent_string_template/",
+  "path": "clearml_agent/clearml_agent_string_template"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_agent_dynamic_edit_task_pod_template_.md",
+  "title": "Dynamic Task Pod Templates | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_agent/dynamic_edit_task_pod_template/",
+  "path": "clearml_agent/dynamic_edit_task_pod_template"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_agent_enterprise_agent_upgrade_6_12_3_.md",
+  "title": "Upgrading to Agent Chart v6.12.3 or greater | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_agent/enterprise_agent_upgrade_6_12_3/",
+  "path": "clearml_agent/enterprise_agent_upgrade_6_12_3"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_agent_fractional_gpus_bare_metal_dynamic_fractional_gpus_.md",
+  "title": "Dynamic GPU Fractions on Bare Metal and VMs | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_agent/fractional_gpus/bare_metal_dynamic_fractional_gpus/",
+  "path": "clearml_agent/fractional_gpus/bare_metal_dynamic_fractional_gpus"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_agent_fractional_gpus_cdmo_.md",
+  "title": "Managing GPU Fractions with ClearML Dynamic MIG Operator (CDMO) | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_agent/fractional_gpus/cdmo/",
+  "path": "clearml_agent/fractional_gpus/cdmo"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_agent_fractional_gpus_cdmo_cfgi_same_cluster_.md",
+  "title": "Install CDMO and CFGI on the Same Cluster | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_agent/fractional_gpus/cdmo_cfgi_same_cluster/",
+  "path": "clearml_agent/fractional_gpus/cdmo_cfgi_same_cluster"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_agent_fractional_gpus_cfgi_.md",
+  "title": "ClearML Fractional GPU Injector (CFGI) | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_agent/fractional_gpus/cfgi/",
+  "path": "clearml_agent/fractional_gpus/cfgi"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_agent_fractional_gpus_gpu_operator_.md",
+  "title": "K8s GPU Operator | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_agent/fractional_gpus/gpu_operator/",
+  "path": "clearml_agent/fractional_gpus/gpu_operator"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_agent_multi_node_training_.md",
+  "title": "Multi-Node Scheduling | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_agent/multi_node_training/",
+  "path": "clearml_agent/multi_node_training"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_data_.md",
+  "title": "ClearML Data | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_data/",
+  "path": "clearml_data"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_data_clearml_data_cli_.md",
+  "title": "ClearML Data CLI | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_data/clearml_data_cli/",
+  "path": "clearml_data/clearml_data_cli"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_data_clearml_data_sdk_.md",
+  "title": "ClearML Data SDK | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_data/clearml_data_sdk/",
+  "path": "clearml_data/clearml_data_sdk"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_data_data_management_examples_data_man_cifar_classification_.md",
+  "title": "Dataset Management with CLI and SDK | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_data/data_management_examples/data_man_cifar_classification/",
+  "path": "clearml_data/data_management_examples/data_man_cifar_classification"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_data_data_management_examples_data_man_folder_sync_.md",
+  "title": "Folder Sync with CLI | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_data/data_management_examples/data_man_folder_sync/",
+  "path": "clearml_data/data_management_examples/data_man_folder_sync"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_data_data_management_examples_data_man_python_.md",
+  "title": "Data Management with Python | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_data/data_management_examples/data_man_python/",
+  "path": "clearml_data/data_management_examples/data_man_python"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_data_data_management_examples_data_man_simple_.md",
+  "title": "Data Management from CLI | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_data/data_management_examples/data_man_simple/",
+  "path": "clearml_data/data_management_examples/data_man_simple"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_data_data_management_examples_workflows_.md",
+  "title": "Workflows | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_data/data_management_examples/workflows/",
+  "path": "clearml_data/data_management_examples/workflows"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_sdk_.md",
+  "title": "ClearML SDK | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_sdk/",
+  "path": "clearml_sdk"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_sdk_apiclient_sdk_.md",
+  "title": "APIClient | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_sdk/apiclient_sdk/",
+  "path": "clearml_sdk/apiclient_sdk"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_sdk_clearml_sdk_setup_.md",
+  "title": "ClearML Python Package | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_sdk/clearml_sdk_setup/",
+  "path": "clearml_sdk/clearml_sdk_setup"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_sdk_hpo_sdk_.md",
+  "title": "Hyperparameter Optimization | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_sdk/hpo_sdk/",
+  "path": "clearml_sdk/hpo_sdk"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_sdk_model_sdk_.md",
+  "title": "Model | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_sdk/model_sdk/",
+  "path": "clearml_sdk/model_sdk"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_sdk_task_sdk_.md",
+  "title": "Task | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_sdk/task_sdk/",
+  "path": "clearml_sdk/task_sdk"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_serving_.md",
+  "title": "ClearML Serving | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_serving/",
+  "path": "clearml_serving"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_serving_clearml_serving_cli_.md",
+  "title": "ClearML Serving CLI | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_serving/clearml_serving_cli/",
+  "path": "clearml_serving/clearml_serving_cli"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_serving_clearml_serving_extra_.md",
+  "title": "Additional Features | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_serving/clearml_serving_extra/",
+  "path": "clearml_serving/clearml_serving_extra"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_serving_clearml_serving_setup_.md",
+  "title": "ClearML Serving Setup | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_serving/clearml_serving_setup/",
+  "path": "clearml_serving/clearml_serving_setup"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_clearml_serving_clearml_serving_tutorial_.md",
+  "title": "ClearML Serving Quick Start Tutorial | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/clearml_serving/clearml_serving_tutorial/",
+  "path": "clearml_serving/clearml_serving_tutorial"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_cloud_autoscaling_autoscaling_overview_.md",
+  "title": "Cloud Autoscaling | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/cloud_autoscaling/autoscaling_overview/",
+  "path": "cloud_autoscaling/autoscaling_overview"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_community_.md",
+  "title": "Community Resources | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/community/",
+  "path": "community"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_configs_clearml_conf_.md",
+  "title": "Configuration File | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/configs/clearml_conf/",
+  "path": "configs/clearml_conf"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_configs_configuring_clearml_.md",
+  "title": "Configuring ClearML | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/configs/configuring_clearml/",
+  "path": "configs/configuring_clearml"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_configs_env_vars_.md",
+  "title": "Environment Variables | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/configs/env_vars/",
+  "path": "configs/env_vars"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_contributing_.md",
+  "title": "Contributing | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/contributing/",
+  "path": "contributing"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_custom_apps_.md",
+  "title": "Custom Applications | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/custom_apps/",
+  "path": "custom_apps"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_clearml_server_.md",
+  "title": "ClearML Server | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/clearml_server/",
+  "path": "deploying_clearml/clearml_server"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_clearml_server_aws_ec2_ami_.md",
+  "title": "AWS EC2 AMIs | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/clearml_server_aws_ec2_ami/",
+  "path": "deploying_clearml/clearml_server_aws_ec2_ami"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_clearml_server_config_.md",
+  "title": "Configuring ClearML Server | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/clearml_server_config/",
+  "path": "deploying_clearml/clearml_server_config"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_clearml_server_es7_migration_.md",
+  "title": "Upgrading Server from v0.15 or Older to ClearML Server | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/clearml_server_es7_migration/",
+  "path": "deploying_clearml/clearml_server_es7_migration"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_clearml_server_gcp_.md",
+  "title": "Google Cloud Platform | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/clearml_server_gcp/",
+  "path": "deploying_clearml/clearml_server_gcp"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_clearml_server_kubernetes_helm_.md",
+  "title": "Kubernetes | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/clearml_server_kubernetes_helm/",
+  "path": "deploying_clearml/clearml_server_kubernetes_helm"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_clearml_server_linux_mac_.md",
+  "title": "Linux and macOS | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/clearml_server_linux_mac/",
+  "path": "deploying_clearml/clearml_server_linux_mac"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_clearml_server_mongo44_migration_.md",
+  "title": "Upgrading Server from v1.1 or Older | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/clearml_server_mongo44_migration/",
+  "path": "deploying_clearml/clearml_server_mongo44_migration"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_clearml_server_security_.md",
+  "title": "Securing ClearML Server | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/clearml_server_security/",
+  "path": "deploying_clearml/clearml_server_security"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_clearml_server_win_.md",
+  "title": "Windows 10 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/clearml_server_win/",
+  "path": "deploying_clearml/clearml_server_win"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_air_gapped_env_.md",
+  "title": "Air-Gapped Environments | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/air_gapped_env/",
+  "path": "deploying_clearml/enterprise_deploy/air_gapped_env"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_api_audit_.md",
+  "title": "Setting up API Auditing | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/api_audit/",
+  "path": "deploying_clearml/enterprise_deploy/api_audit"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_app_custom_.md",
+  "title": "Custom Applications | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/app_custom/",
+  "path": "deploying_clearml/enterprise_deploy/app_custom"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_app_install_ex_server_.md",
+  "title": "External Applications Server Installation | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/app_install_ex_server/",
+  "path": "deploying_clearml/enterprise_deploy/app_install_ex_server"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_app_install_ubuntu_on_prem_.md",
+  "title": "Application Installation on On-Prem and VPC Servers | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/app_install_ubuntu_on_prem/",
+  "path": "deploying_clearml/enterprise_deploy/app_install_ubuntu_on_prem"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_app_launch_form_custom_.md",
+  "title": "Application Launch Form Customization | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/app_launch_form_custom/",
+  "path": "deploying_clearml/enterprise_deploy/app_launch_form_custom"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_app_visibility_policy_.md",
+  "title": "Application Instance Visibility Policy | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/app_visibility_policy/",
+  "path": "deploying_clearml/enterprise_deploy/app_visibility_policy"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_appgw_.md",
+  "title": "AI Application Gateway | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/appgw/",
+  "path": "deploying_clearml/enterprise_deploy/appgw"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_appgw_install_compose_.md",
+  "title": "Docker-Compose Deployment | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/appgw_install_compose/",
+  "path": "deploying_clearml/enterprise_deploy/appgw_install_compose"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_appgw_install_compose_hosted_.md",
+  "title": "Docker-Compose - Hosted Server | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/appgw_install_compose_hosted/",
+  "path": "deploying_clearml/enterprise_deploy/appgw_install_compose_hosted"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_appgw_install_k8s_.md",
+  "title": "Kubernetes Deployment | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/appgw_install_k8s/",
+  "path": "deploying_clearml/enterprise_deploy/appgw_install_k8s"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_appgw_migrate_nonroot_.md",
+  "title": "Migrating the AI App Gateway to Non-Root Images | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/appgw_migrate_nonroot/",
+  "path": "deploying_clearml/enterprise_deploy/appgw_migrate_nonroot"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_apps_k8s_.md",
+  "title": "Application Installation on Kubernetes | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/apps_k8s/",
+  "path": "deploying_clearml/enterprise_deploy/apps_k8s"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_change_artifact_links_.md",
+  "title": "Changing ClearML Artifacts Links | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/change_artifact_links/",
+  "path": "deploying_clearml/enterprise_deploy/change_artifact_links"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_clearml_server_image_scanning_.md",
+  "title": "Accurate Vulnerability Scanning of ClearML Images | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/clearml_server_image_scanning/",
+  "path": "deploying_clearml/enterprise_deploy/clearml_server_image_scanning"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_container_debug_.md",
+  "title": "Container and Pod Debugging | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/container_debug/",
+  "path": "deploying_clearml/enterprise_deploy/container_debug"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_delete_tenant_.md",
+  "title": "Deleting Tenants from ClearML | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/delete_tenant/",
+  "path": "deploying_clearml/enterprise_deploy/delete_tenant"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_docker_compose_upgrade_3_29_.md",
+  "title": "Upgrading Docker Compose Deployment to v3.29 and Greater | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/docker_compose_upgrade_3_29/",
+  "path": "deploying_clearml/enterprise_deploy/docker_compose_upgrade_3_29"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_extra_configs_api_cred_expiration_policy_.md",
+  "title": "API Credentials Expiration Policy | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/extra_configs/api_cred_expiration_policy/",
+  "path": "deploying_clearml/enterprise_deploy/extra_configs/api_cred_expiration_policy"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_extra_configs_backups_.md",
+  "title": "Backup | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/extra_configs/backups/",
+  "path": "deploying_clearml/enterprise_deploy/extra_configs/backups"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_extra_configs_bitnami_mongo_mitigation_.md",
+  "title": "MongoDB 7 Latest Patch | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/extra_configs/bitnami_mongo_mitigation/",
+  "path": "deploying_clearml/enterprise_deploy/extra_configs/bitnami_mongo_mitigation"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_extra_configs_custom_billing_.md",
+  "title": "Custom Events | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/extra_configs/custom_billing/",
+  "path": "deploying_clearml/enterprise_deploy/extra_configs/custom_billing"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_extra_configs_customizing_ui_.md",
+  "title": "Customizing the ClearML Web UI | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/extra_configs/customizing_ui/",
+  "path": "deploying_clearml/enterprise_deploy/extra_configs/customizing_ui"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_extra_configs_event_metering_.md",
+  "title": "Event Metering | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/extra_configs/event_metering/",
+  "path": "deploying_clearml/enterprise_deploy/extra_configs/event_metering"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_extra_configs_monitoring_k8s_.md",
+  "title": "Monitoring (K8s) | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/extra_configs/monitoring_k8s/",
+  "path": "deploying_clearml/enterprise_deploy/extra_configs/monitoring_k8s"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_extra_configs_monitoring_vm_docker_.md",
+  "title": "Monitoring (VM / Docker Deployment) | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/extra_configs/monitoring_vm_docker/",
+  "path": "deploying_clearml/enterprise_deploy/extra_configs/monitoring_vm_docker"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_extra_configs_platform_management_center_deploy_.md",
+  "title": "Platform Management Center | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/extra_configs/platform_management_center_deploy/",
+  "path": "deploying_clearml/enterprise_deploy/extra_configs/platform_management_center_deploy"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_extra_configs_presign_service_.md",
+  "title": "ClearML S3 Presign Service | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/extra_configs/presign_service/",
+  "path": "deploying_clearml/enterprise_deploy/extra_configs/presign_service"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_extra_configs_self_signed_certificates_.md",
+  "title": "Deployment with Self-Signed Certificates | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/extra_configs/self_signed_certificates/",
+  "path": "deploying_clearml/enterprise_deploy/extra_configs/self_signed_certificates"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_extra_configs_sso_sso_amazon_cognito_oauth_.md",
+  "title": "Amazon Cognito OAuth | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/extra_configs/sso/sso_amazon_cognito_oauth/",
+  "path": "deploying_clearml/enterprise_deploy/extra_configs/sso/sso_amazon_cognito_oauth"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_extra_configs_sso_sso_azure_ad_oauth_.md",
+  "title": "Azure AD OAuth | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/extra_configs/sso/sso_azure_ad_oauth/",
+  "path": "deploying_clearml/enterprise_deploy/extra_configs/sso/sso_azure_ad_oauth"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_extra_configs_sso_sso_duo_saml_.md",
+  "title": "Duo SAML | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/extra_configs/sso/sso_duo_saml/",
+  "path": "deploying_clearml/enterprise_deploy/extra_configs/sso/sso_duo_saml"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_extra_configs_sso_sso_google_oauth_.md",
+  "title": "Google OAuth | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/extra_configs/sso/sso_google_oauth/",
+  "path": "deploying_clearml/enterprise_deploy/extra_configs/sso/sso_google_oauth"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_extra_configs_sso_sso_google_saml_.md",
+  "title": "Google SAML | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/extra_configs/sso/sso_google_saml/",
+  "path": "deploying_clearml/enterprise_deploy/extra_configs/sso/sso_google_saml"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_extra_configs_sso_sso_jumpcloud_saml_.md",
+  "title": "JumpCloud SAML | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/extra_configs/sso/sso_jumpcloud_saml/",
+  "path": "deploying_clearml/enterprise_deploy/extra_configs/sso/sso_jumpcloud_saml"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_extra_configs_sso_sso_keycloak_oauth_.md",
+  "title": "Keycloak OAuth | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/extra_configs/sso/sso_keycloak_oauth/",
+  "path": "deploying_clearml/enterprise_deploy/extra_configs/sso/sso_keycloak_oauth"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_extra_configs_sso_sso_ldap_.md",
+  "title": "LDAP | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/extra_configs/sso/sso_ldap/",
+  "path": "deploying_clearml/enterprise_deploy/extra_configs/sso/sso_ldap"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_extra_configs_sso_sso_microsoft_ad_oauth_.md",
+  "title": "Microsoft AD OAuth | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/extra_configs/sso/sso_microsoft_ad_oauth/",
+  "path": "deploying_clearml/enterprise_deploy/extra_configs/sso/sso_microsoft_ad_oauth"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_extra_configs_sso_sso_microsoft_ad_saml_.md",
+  "title": "Microsoft AD SAML (Including Azure SAML) | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/extra_configs/sso/sso_microsoft_ad_saml/",
+  "path": "deploying_clearml/enterprise_deploy/extra_configs/sso/sso_microsoft_ad_saml"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_extra_configs_sso_sso_okta_oauth_.md",
+  "title": "Okta OAuth | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/extra_configs/sso/sso_okta_oauth/",
+  "path": "deploying_clearml/enterprise_deploy/extra_configs/sso/sso_okta_oauth"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_extra_configs_sso_sso_ping_id_oauth_.md",
+  "title": "Ping Identity OAuth | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/extra_configs/sso/sso_ping_id_oauth/",
+  "path": "deploying_clearml/enterprise_deploy/extra_configs/sso/sso_ping_id_oauth"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_import_projects_.md",
+  "title": "Project Migration | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/import_projects/",
+  "path": "deploying_clearml/enterprise_deploy/import_projects"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_k8s_.md",
+  "title": "Kubernetes | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/k8s/",
+  "path": "deploying_clearml/enterprise_deploy/k8s"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_k8s_mckmongo_migration_.md",
+  "title": "MongoDB Chart Migration Guide | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/k8s_mckmongo_migration/",
+  "path": "deploying_clearml/enterprise_deploy/k8s_mckmongo_migration"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_multi_tenant_k8s_.md",
+  "title": "Multi-Tenant Service on Kubernetes | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/multi_tenant_k8s/",
+  "path": "deploying_clearml/enterprise_deploy/multi_tenant_k8s"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_on_prem_ubuntu_.md",
+  "title": "On-Premises on Ubuntu | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/on_prem_ubuntu/",
+  "path": "deploying_clearml/enterprise_deploy/on_prem_ubuntu"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_openshift_.md",
+  "title": "OpenShift | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/openshift/",
+  "path": "deploying_clearml/enterprise_deploy/openshift"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_enterprise_deploy_vpc_aws_.md",
+  "title": "AWS VPC | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/vpc_aws/",
+  "path": "deploying_clearml/enterprise_deploy/vpc_aws"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_upgrade_server_aws_ec2_ami_.md",
+  "title": "AWS EC2 AMIs | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/upgrade_server_aws_ec2_ami/",
+  "path": "deploying_clearml/upgrade_server_aws_ec2_ami"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_upgrade_server_gcp_.md",
+  "title": "Google Cloud Platform | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/upgrade_server_gcp/",
+  "path": "deploying_clearml/upgrade_server_gcp"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_upgrade_server_kubernetes_helm_.md",
+  "title": "Kubernetes | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/upgrade_server_kubernetes_helm/",
+  "path": "deploying_clearml/upgrade_server_kubernetes_helm"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_upgrade_server_linux_mac_.md",
+  "title": "Linux or macOS | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/upgrade_server_linux_mac/",
+  "path": "deploying_clearml/upgrade_server_linux_mac"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_clearml_upgrade_server_win_.md",
+  "title": "Windows | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_clearml/upgrade_server_win/",
+  "path": "deploying_clearml/upgrade_server_win"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_deploying_models_.md",
+  "title": "Model Deployment | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/deploying_models/",
+  "path": "deploying_models"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_faq_.md",
+  "title": "FAQ | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/faq/",
+  "path": "faq"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_fundamentals_agents_and_queues_.md",
+  "title": "Workers and Queues | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/fundamentals/agents_and_queues/",
+  "path": "fundamentals/agents_and_queues"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_fundamentals_artifacts_.md",
+  "title": "Artifacts | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/fundamentals/artifacts/",
+  "path": "fundamentals/artifacts"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_fundamentals_hyperparameters_.md",
+  "title": "Hyperparameters | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/fundamentals/hyperparameters/",
+  "path": "fundamentals/hyperparameters"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_fundamentals_logger_.md",
+  "title": "Logger | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/fundamentals/logger/",
+  "path": "fundamentals/logger"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_fundamentals_models_.md",
+  "title": "Models | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/fundamentals/models/",
+  "path": "fundamentals/models"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_fundamentals_projects_.md",
+  "title": "Projects | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/fundamentals/projects/",
+  "path": "fundamentals/projects"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_fundamentals_task_.md",
+  "title": "Tasks | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/fundamentals/task/",
+  "path": "fundamentals/task"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_getting_started_auto_log_exp_.md",
+  "title": "Auto-logging Experiments | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/getting_started/auto_log_exp/",
+  "path": "getting_started/auto_log_exp"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_getting_started_building_pipelines_.md",
+  "title": "Building Pipelines | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/getting_started/building_pipelines/",
+  "path": "getting_started/building_pipelines"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_getting_started_clearml_agent_base_docker_.md",
+  "title": "Building Task Execution Environments in a Container | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/getting_started/clearml_agent_base_docker/",
+  "path": "getting_started/clearml_agent_base_docker"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_getting_started_clearml_agent_docker_exec_.md",
+  "title": "Building Executable Task Containers | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/getting_started/clearml_agent_docker_exec/",
+  "path": "getting_started/clearml_agent_docker_exec"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_getting_started_clearml_agent_scheduling_.md",
+  "title": "Managing Agent Work Schedules | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/getting_started/clearml_agent_scheduling/",
+  "path": "getting_started/clearml_agent_scheduling"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_getting_started_data_management_.md",
+  "title": "Managing Your Data | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/getting_started/data_management/",
+  "path": "getting_started/data_management"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_getting_started_hpo_.md",
+  "title": "Hyperparameter Optimization | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/getting_started/hpo/",
+  "path": "getting_started/hpo"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_getting_started_logging_using_artifacts_.md",
+  "title": "Logging and Using Task Artifacts | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/getting_started/logging_using_artifacts/",
+  "path": "getting_started/logging_using_artifacts"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_getting_started_project_progress_.md",
+  "title": "Monitoring Project Progress | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/getting_started/project_progress/",
+  "path": "getting_started/project_progress"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_getting_started_remote_execution_.md",
+  "title": "Remote Execution | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/getting_started/remote_execution/",
+  "path": "getting_started/remote_execution"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_getting_started_reproduce_tasks_.md",
+  "title": "Reproducing Task Runs | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/getting_started/reproduce_tasks/",
+  "path": "getting_started/reproduce_tasks"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_getting_started_task_trigger_schedule_.md",
+  "title": "Scheduling and Triggering Task Execution | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/getting_started/task_trigger_schedule/",
+  "path": "getting_started/task_trigger_schedule"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_getting_started_track_tasks_.md",
+  "title": "Tracking Tasks | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/getting_started/track_tasks/",
+  "path": "getting_started/track_tasks"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_getting_started_video_tutorials_agent_remote_execution_and_automation_.md",
+  "title": "Agent Remote Execution and Automation | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/getting_started/video_tutorials/agent_remote_execution_and_automation/",
+  "path": "getting_started/video_tutorials/agent_remote_execution_and_automation"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_getting_started_video_tutorials_clearml-data_.md",
+  "title": "ClearML Data | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/getting_started/video_tutorials/clearml-data/",
+  "path": "getting_started/video_tutorials/clearml-data"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_getting_started_video_tutorials_core_component_overview_.md",
+  "title": "Core Component Overview | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/getting_started/video_tutorials/core_component_overview/",
+  "path": "getting_started/video_tutorials/core_component_overview"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_getting_started_video_tutorials_experiment_management_best_practices_.md",
+  "title": "Experiment Management Best Practices | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/getting_started/video_tutorials/experiment_management_best_practices/",
+  "path": "getting_started/video_tutorials/experiment_management_best_practices"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_getting_started_video_tutorials_experiment_manager_hands-on_.md",
+  "title": "Experiment Manager Hands-on | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/getting_started/video_tutorials/experiment_manager_hands-on/",
+  "path": "getting_started/video_tutorials/experiment_manager_hands-on"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_getting_started_video_tutorials_hands-on_mlops_tutorials_how_clearml_is_used_by_a_data_scientist_.md",
+  "title": "How ClearML is used by a Data Scientist | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/getting_started/video_tutorials/hands-on_mlops_tutorials/how_clearml_is_used_by_a_data_scientist/",
+  "path": "getting_started/video_tutorials/hands-on_mlops_tutorials/how_clearml_is_used_by_a_data_scientist"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_getting_started_video_tutorials_hands-on_mlops_tutorials_how_clearml_is_used_by_an_mlops_engineer_.md",
+  "title": "How ClearML is used by an MLOps Engineer | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/getting_started/video_tutorials/hands-on_mlops_tutorials/how_clearml_is_used_by_an_mlops_engineer/",
+  "path": "getting_started/video_tutorials/hands-on_mlops_tutorials/how_clearml_is_used_by_an_mlops_engineer"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_getting_started_video_tutorials_hands-on_mlops_tutorials_ml_ci_cd_using_github_actions_and_clearml_.md",
+  "title": "Machine Learning CI/CD using GitHub Actions and ClearML | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/getting_started/video_tutorials/hands-on_mlops_tutorials/ml_ci_cd_using_github_actions_and_clearml/",
+  "path": "getting_started/video_tutorials/hands-on_mlops_tutorials/ml_ci_cd_using_github_actions_and_clearml"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_getting_started_video_tutorials_hyperdatasets_data_versioning_.md",
+  "title": "Hyper-Datasets Data Versioning | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/getting_started/video_tutorials/hyperdatasets_data_versioning/",
+  "path": "getting_started/video_tutorials/hyperdatasets_data_versioning"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_getting_started_video_tutorials_hyperparameter_optimization_.md",
+  "title": "Hyperparameter Optimization | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/getting_started/video_tutorials/hyperparameter_optimization/",
+  "path": "getting_started/video_tutorials/hyperparameter_optimization"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_getting_started_video_tutorials_pipelines_from_code_.md",
+  "title": "Pipelines from Code | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/getting_started/video_tutorials/pipelines_from_code/",
+  "path": "getting_started/video_tutorials/pipelines_from_code"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_getting_started_video_tutorials_pipelines_from_tasks_.md",
+  "title": "Pipelines from Tasks | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/getting_started/video_tutorials/pipelines_from_tasks/",
+  "path": "getting_started/video_tutorials/pipelines_from_tasks"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_getting_started_video_tutorials_quick_introduction_.md",
+  "title": "Quick Introduction | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/getting_started/video_tutorials/quick_introduction/",
+  "path": "getting_started/video_tutorials/quick_introduction"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_getting_started_video_tutorials_the_clearml_autoscaler_.md",
+  "title": "The ClearML Autoscaler | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/getting_started/video_tutorials/the_clearml_autoscaler/",
+  "path": "getting_started/video_tutorials/the_clearml_autoscaler"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_.md",
+  "title": "ClearML Tutorials | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/",
+  "path": "guides"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_advanced_execute_remotely_.md",
+  "title": "Remote Execution | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/advanced/execute_remotely/",
+  "path": "guides/advanced/execute_remotely"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_advanced_multiple_tasks_single_process_.md",
+  "title": "Multiple Tasks in Single Process | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/advanced/multiple_tasks_single_process/",
+  "path": "guides/advanced/multiple_tasks_single_process"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_automation_manual_random_param_search_example_.md",
+  "title": "Manual Random Parameter Search | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/automation/manual_random_param_search_example/",
+  "path": "guides/automation/manual_random_param_search_example"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_automation_task_piping_.md",
+  "title": "Programmatic Orchestration | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/automation/task_piping/",
+  "path": "guides/automation/task_piping"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_clearml-task_clearml_task_tutorial_.md",
+  "title": "ClearML Task Tutorial | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/clearml-task/clearml_task_tutorial/",
+  "path": "guides/clearml-task/clearml_task_tutorial"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_clearml_agent_executable_exp_containers_.md",
+  "title": "Executable Task Containers | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/clearml_agent/executable_exp_containers/",
+  "path": "guides/clearml_agent/executable_exp_containers"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_clearml_agent_exp_environment_containers_.md",
+  "title": "Task Environment Containers | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/clearml_agent/exp_environment_containers/",
+  "path": "guides/clearml_agent/exp_environment_containers"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_clearml_agent_reproduce_exp_.md",
+  "title": "Recreating Task Environments | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/clearml_agent/reproduce_exp/",
+  "path": "guides/clearml_agent/reproduce_exp"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_distributed_distributed_pytorch_example_.md",
+  "title": "PyTorch Distributed | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/distributed/distributed_pytorch_example/",
+  "path": "guides/distributed/distributed_pytorch_example"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_distributed_subprocess_example_.md",
+  "title": "Subprocess | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/distributed/subprocess_example/",
+  "path": "guides/distributed/subprocess_example"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_docker_extra_docker_shell_script_.md",
+  "title": "Extra Docker Shell Script | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/docker/extra_docker_shell_script/",
+  "path": "guides/docker/extra_docker_shell_script"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_frameworks_autokeras_autokeras_imdb_example_.md",
+  "title": "AutoKeras | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/frameworks/autokeras/autokeras_imdb_example/",
+  "path": "guides/frameworks/autokeras/autokeras_imdb_example"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_frameworks_catboost_.md",
+  "title": "CatBoost | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/frameworks/catboost/",
+  "path": "guides/frameworks/catboost"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_frameworks_fastai_fastai_with_tensorboard_.md",
+  "title": "Fast.ai | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/frameworks/fastai/fastai_with_tensorboard/",
+  "path": "guides/frameworks/fastai/fastai_with_tensorboard"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_frameworks_huggingface_transformers_.md",
+  "title": "Transformers | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/frameworks/huggingface/transformers/",
+  "path": "guides/frameworks/huggingface/transformers"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_frameworks_keras_jupyter_.md",
+  "title": "Keras with Matplotlib - Jupyter Notebook | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/frameworks/keras/jupyter/",
+  "path": "guides/frameworks/keras/jupyter"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_frameworks_keras_keras_tensorboard_.md",
+  "title": "Keras with TensorBoard | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/frameworks/keras/keras_tensorboard/",
+  "path": "guides/frameworks/keras/keras_tensorboard"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_frameworks_lightgbm_lightgbm_example_.md",
+  "title": "LightGBM | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/frameworks/lightgbm/lightgbm_example/",
+  "path": "guides/frameworks/lightgbm/lightgbm_example"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_frameworks_matplotlib_matplotlib_example_.md",
+  "title": "Matplotlib | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/frameworks/matplotlib/matplotlib_example/",
+  "path": "guides/frameworks/matplotlib/matplotlib_example"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_frameworks_megengine_megengine_mnist_.md",
+  "title": "MegEngine | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/frameworks/megengine/megengine_mnist/",
+  "path": "guides/frameworks/megengine/megengine_mnist"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_frameworks_pytorch_ignite_integration_pytorch_ignite_.md",
+  "title": "PyTorch Ignite TensorboardLogger | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/frameworks/pytorch_ignite/integration_pytorch_ignite/",
+  "path": "guides/frameworks/pytorch_ignite/integration_pytorch_ignite"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_frameworks_pytorch_ignite_pytorch_ignite_mnist_.md",
+  "title": "PyTorch Ignite ClearMLLogger | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/frameworks/pytorch_ignite/pytorch_ignite_mnist/",
+  "path": "guides/frameworks/pytorch_ignite/pytorch_ignite_mnist"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_frameworks_pytorch_lightning_pytorch_lightning_example_.md",
+  "title": "PyTorch Lightning | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/frameworks/pytorch_lightning/pytorch_lightning_example/",
+  "path": "guides/frameworks/pytorch_lightning/pytorch_lightning_example"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_frameworks_pytorch_model_updating_.md",
+  "title": "PyTorch Model Updating | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/frameworks/pytorch/model_updating/",
+  "path": "guides/frameworks/pytorch/model_updating"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_frameworks_pytorch_notebooks_audio_audio_classification_UrbanSound8K_.md",
+  "title": "Audio Classification - Jupyter Notebooks | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/frameworks/pytorch/notebooks/audio/audio_classification_UrbanSound8K/",
+  "path": "guides/frameworks/pytorch/notebooks/audio/audio_classification_UrbanSound8K"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_frameworks_pytorch_notebooks_audio_audio_preprocessing_example_.md",
+  "title": "Audio Preprocessing - Jupyter Notebook | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/frameworks/pytorch/notebooks/audio/audio_preprocessing_example/",
+  "path": "guides/frameworks/pytorch/notebooks/audio/audio_preprocessing_example"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_frameworks_pytorch_notebooks_image_hyperparameter_search_.md",
+  "title": "Image Hyperparameter Optimization - Jupyter Notebook | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/frameworks/pytorch/notebooks/image/hyperparameter_search/",
+  "path": "guides/frameworks/pytorch/notebooks/image/hyperparameter_search"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_frameworks_pytorch_notebooks_image_image_classification_CIFAR10_.md",
+  "title": "Image Classification - Jupyter Notebook | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/frameworks/pytorch/notebooks/image/image_classification_CIFAR10/",
+  "path": "guides/frameworks/pytorch/notebooks/image/image_classification_CIFAR10"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_frameworks_pytorch_notebooks_table_download_and_preprocessing_.md",
+  "title": "Tabular Data Downloading and Preprocessing - Jupyter Notebook | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/frameworks/pytorch/notebooks/table/download_and_preprocessing/",
+  "path": "guides/frameworks/pytorch/notebooks/table/download_and_preprocessing"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_frameworks_pytorch_notebooks_table_tabular_training_pipeline_.md",
+  "title": "Tabular Data Pipeline with Concurrent Steps - Jupyter Notebook | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/frameworks/pytorch/notebooks/table/tabular_training_pipeline/",
+  "path": "guides/frameworks/pytorch/notebooks/table/tabular_training_pipeline"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_frameworks_pytorch_notebooks_text_text_classification_AG_NEWS_.md",
+  "title": "Text Classification - Jupyter Notebook | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/frameworks/pytorch/notebooks/text/text_classification_AG_NEWS/",
+  "path": "guides/frameworks/pytorch/notebooks/text/text_classification_AG_NEWS"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_frameworks_pytorch_pytorch_abseil_.md",
+  "title": "PyTorch Abseil | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/frameworks/pytorch/pytorch_abseil/",
+  "path": "guides/frameworks/pytorch/pytorch_abseil"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_frameworks_pytorch_pytorch_distributed_example_.md",
+  "title": "PyTorch Distributed | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/frameworks/pytorch/pytorch_distributed_example/",
+  "path": "guides/frameworks/pytorch/pytorch_distributed_example"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_frameworks_pytorch_pytorch_matplotlib_.md",
+  "title": "PyTorch with Matplotlib | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/frameworks/pytorch/pytorch_matplotlib/",
+  "path": "guides/frameworks/pytorch/pytorch_matplotlib"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_frameworks_pytorch_pytorch_mnist_.md",
+  "title": "PyTorch MNIST | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/frameworks/pytorch/pytorch_mnist/",
+  "path": "guides/frameworks/pytorch/pytorch_mnist"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_frameworks_pytorch_pytorch_tensorboard_.md",
+  "title": "PyTorch with TensorBoard | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/frameworks/pytorch/pytorch_tensorboard/",
+  "path": "guides/frameworks/pytorch/pytorch_tensorboard"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_frameworks_pytorch_pytorch_tensorboardx_.md",
+  "title": "PyTorch TensorBoardX | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/frameworks/pytorch/pytorch_tensorboardx/",
+  "path": "guides/frameworks/pytorch/pytorch_tensorboardx"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_frameworks_pytorch_tensorboard_toy_pytorch_.md",
+  "title": "PyTorch TensorBoard Toy | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/frameworks/pytorch/tensorboard_toy_pytorch/",
+  "path": "guides/frameworks/pytorch/tensorboard_toy_pytorch"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_frameworks_scikit-learn_sklearn_joblib_example_.md",
+  "title": "scikit-learn with Joblib | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/frameworks/scikit-learn/sklearn_joblib_example/",
+  "path": "guides/frameworks/scikit-learn/sklearn_joblib_example"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_frameworks_scikit-learn_sklearn_matplotlib_example_.md",
+  "title": "scikit-learn with Matplotlib | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/frameworks/scikit-learn/sklearn_matplotlib_example/",
+  "path": "guides/frameworks/scikit-learn/sklearn_matplotlib_example"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_frameworks_tensorboardx_.md",
+  "title": "TensorBoardX with PyTorch | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/frameworks/tensorboardx/",
+  "path": "guides/frameworks/tensorboardx"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_frameworks_tensorboardx_video_tensorboardx_.md",
+  "title": "TensorBoardX Video | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/frameworks/tensorboardx/video_tensorboardx/",
+  "path": "guides/frameworks/tensorboardx/video_tensorboardx"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_frameworks_tensorflow_integration_keras_tuner_.md",
+  "title": "Keras Tuner | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/frameworks/tensorflow/integration_keras_tuner/",
+  "path": "guides/frameworks/tensorflow/integration_keras_tuner"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_frameworks_tensorflow_tensorboard_pr_curve_.md",
+  "title": "TensorBoard PR Curve | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/frameworks/tensorflow/tensorboard_pr_curve/",
+  "path": "guides/frameworks/tensorflow/tensorboard_pr_curve"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_frameworks_tensorflow_tensorboard_toy_.md",
+  "title": "TensorBoard Toy | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/frameworks/tensorflow/tensorboard_toy/",
+  "path": "guides/frameworks/tensorflow/tensorboard_toy"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_frameworks_tensorflow_tensorflow_mnist_.md",
+  "title": "TensorFlow MNIST | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/frameworks/tensorflow/tensorflow_mnist/",
+  "path": "guides/frameworks/tensorflow/tensorflow_mnist"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_frameworks_xgboost_xgboost_metrics_.md",
+  "title": "XGBoost Metrics | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/frameworks/xgboost/xgboost_metrics/",
+  "path": "guides/frameworks/xgboost/xgboost_metrics"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_frameworks_xgboost_xgboost_sample_.md",
+  "title": "XGBoost and scikit-learn | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/frameworks/xgboost/xgboost_sample/",
+  "path": "guides/frameworks/xgboost/xgboost_sample"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_ide_google_colab_.md",
+  "title": "ClearML Agent on Google Colab | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/ide/google_colab/",
+  "path": "guides/ide/google_colab"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_ide_integration_pycharm_.md",
+  "title": "Integration for PyCharm | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/ide/integration_pycharm/",
+  "path": "guides/ide/integration_pycharm"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_ide_remote_jupyter_tutorial_.md",
+  "title": "Remote Jupyter Tutorial | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/ide/remote_jupyter_tutorial/",
+  "path": "guides/ide/remote_jupyter_tutorial"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_optimization_hyper-parameter-optimization_examples_hyperparam_opt_.md",
+  "title": "Hyperparameter Optimization | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/optimization/hyper-parameter-optimization/examples_hyperparam_opt/",
+  "path": "guides/optimization/hyper-parameter-optimization/examples_hyperparam_opt"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_pipeline_pipeline_controller_.md",
+  "title": "Pipeline from Tasks | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/pipeline/pipeline_controller/",
+  "path": "guides/pipeline/pipeline_controller"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_pipeline_pipeline_decorator_.md",
+  "title": "Pipeline from Decorators | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/pipeline/pipeline_decorator/",
+  "path": "guides/pipeline/pipeline_decorator"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_pipeline_pipeline_functions_.md",
+  "title": "Pipeline from Functions | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/pipeline/pipeline_functions/",
+  "path": "guides/pipeline/pipeline_functions"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_reporting_3d_plots_reporting_.md",
+  "title": "3D Plot Reporting | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/reporting/3d_plots_reporting/",
+  "path": "guides/reporting/3d_plots_reporting"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_reporting_artifacts_.md",
+  "title": "Artifacts Reporting | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/reporting/artifacts/",
+  "path": "guides/reporting/artifacts"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_reporting_clearml_logging_example_.md",
+  "title": "Using Logger - Jupyter Notebook | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/reporting/clearml_logging_example/",
+  "path": "guides/reporting/clearml_logging_example"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_reporting_explicit_reporting_.md",
+  "title": "Explicit Reporting Tutorial | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/reporting/explicit_reporting/",
+  "path": "guides/reporting/explicit_reporting"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_reporting_html_reporting_.md",
+  "title": "HTML Reporting | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/reporting/html_reporting/",
+  "path": "guides/reporting/html_reporting"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_reporting_hyper_parameters_.md",
+  "title": "Hyperparameters Reporting | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/reporting/hyper_parameters/",
+  "path": "guides/reporting/hyper_parameters"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_reporting_image_reporting_.md",
+  "title": "Image Reporting | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/reporting/image_reporting/",
+  "path": "guides/reporting/image_reporting"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_reporting_manual_matplotlib_reporting_.md",
+  "title": "Manual Matplotlib Reporting | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/reporting/manual_matplotlib_reporting/",
+  "path": "guides/reporting/manual_matplotlib_reporting"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_reporting_media_reporting_.md",
+  "title": "Media Reporting | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/reporting/media_reporting/",
+  "path": "guides/reporting/media_reporting"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_reporting_model_config_.md",
+  "title": "Model Reporting | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/reporting/model_config/",
+  "path": "guides/reporting/model_config"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_reporting_pandas_reporting_.md",
+  "title": "Tables Reporting (Pandas and CSV Files) | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/reporting/pandas_reporting/",
+  "path": "guides/reporting/pandas_reporting"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_reporting_plotly_reporting_.md",
+  "title": "Plotly Reporting | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/reporting/plotly_reporting/",
+  "path": "guides/reporting/plotly_reporting"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_reporting_scalar_reporting_.md",
+  "title": "Scalars Reporting | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/reporting/scalar_reporting/",
+  "path": "guides/reporting/scalar_reporting"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_reporting_scatter_hist_confusion_mat_reporting_.md",
+  "title": "2D Plots Reporting | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/reporting/scatter_hist_confusion_mat_reporting/",
+  "path": "guides/reporting/scatter_hist_confusion_mat_reporting"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_reporting_text_reporting_.md",
+  "title": "Text Reporting | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/reporting/text_reporting/",
+  "path": "guides/reporting/text_reporting"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_reporting_using_artifacts_.md",
+  "title": "Using Artifacts | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/reporting/using_artifacts/",
+  "path": "guides/reporting/using_artifacts"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_services_aws_autoscaler_.md",
+  "title": "ClearML AWS Autoscaler Service | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/services/aws_autoscaler/",
+  "path": "guides/services/aws_autoscaler"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_services_cleanup_service_.md",
+  "title": "Cleanup Service | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/services/cleanup_service/",
+  "path": "guides/services/cleanup_service"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_services_slack_alerts_.md",
+  "title": "Monitoring Service Posting Slack Alerts | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/services/slack_alerts/",
+  "path": "guides/services/slack_alerts"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_set_offline_.md",
+  "title": "Storing Task Data Offline | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/set_offline/",
+  "path": "guides/set_offline"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_storage_examples_storagehelper_.md",
+  "title": "StorageManager | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/storage/examples_storagehelper/",
+  "path": "guides/storage/examples_storagehelper"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_ui_building_leader_board_.md",
+  "title": "Tracking Leaderboards | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/ui/building_leader_board/",
+  "path": "guides/ui/building_leader_board"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_guides_ui_tuning_exp_.md",
+  "title": "Tuning Tasks | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/guides/ui/tuning_exp/",
+  "path": "guides/ui/tuning_exp"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_hyper_datasets_.md",
+  "title": "Hyper-Datasets | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/hyper_datasets/",
+  "path": "hyper_datasets"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_hyperdatasets_annotations_.md",
+  "title": "Annotations | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/hyperdatasets/annotations/",
+  "path": "hyperdatasets/annotations"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_hyperdatasets_code_examples_.md",
+  "title": "Code Examples | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/hyperdatasets/code_examples/",
+  "path": "hyperdatasets/code_examples"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_hyperdatasets_custom_metadata_.md",
+  "title": "Custom Metadata | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/hyperdatasets/custom_metadata/",
+  "path": "hyperdatasets/custom_metadata"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_hyperdatasets_dataset_.md",
+  "title": "Datasets and Dataset Versions | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/hyperdatasets/dataset/",
+  "path": "hyperdatasets/dataset"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_hyperdatasets_dataviews_.md",
+  "title": "Dataviews | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/hyperdatasets/dataviews/",
+  "path": "hyperdatasets/dataviews"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_hyperdatasets_frame_groups_.md",
+  "title": "FrameGroups | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/hyperdatasets/frame_groups/",
+  "path": "hyperdatasets/frame_groups"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_hyperdatasets_frames_.md",
+  "title": "Frames Overview | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/hyperdatasets/frames/",
+  "path": "hyperdatasets/frames"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_hyperdatasets_masks_.md",
+  "title": "Masks | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/hyperdatasets/masks/",
+  "path": "hyperdatasets/masks"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_hyperdatasets_overview_.md",
+  "title": "Hyper-Datasets | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/hyperdatasets/overview/",
+  "path": "hyperdatasets/overview"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_hyperdatasets_previews_.md",
+  "title": "Previews | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/hyperdatasets/previews/",
+  "path": "hyperdatasets/previews"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_hyperdatasets_single_frames_.md",
+  "title": "SingleFrames | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/hyperdatasets/single_frames/",
+  "path": "hyperdatasets/single_frames"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_hyperdatasets_sources_.md",
+  "title": "Sources | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/hyperdatasets/sources/",
+  "path": "hyperdatasets/sources"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_hyperdatasets_webapp_webapp_annotator_.md",
+  "title": "Annotation Tasks | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/hyperdatasets/webapp/webapp_annotator/",
+  "path": "hyperdatasets/webapp/webapp_annotator"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_hyperdatasets_webapp_webapp_datasets_.md",
+  "title": "Hyper-Datasets Page | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/hyperdatasets/webapp/webapp_datasets/",
+  "path": "hyperdatasets/webapp/webapp_datasets"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_hyperdatasets_webapp_webapp_datasets_frames_.md",
+  "title": "Working with Frames | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/hyperdatasets/webapp/webapp_datasets_frames/",
+  "path": "hyperdatasets/webapp/webapp_datasets_frames"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_hyperdatasets_webapp_webapp_datasets_versioning_.md",
+  "title": "Dataset Versions | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/hyperdatasets/webapp/webapp_datasets_versioning/",
+  "path": "hyperdatasets/webapp/webapp_datasets_versioning"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_hyperdatasets_webapp_webapp_dataviews_.md",
+  "title": "The Dataview Table | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/hyperdatasets/webapp/webapp_dataviews/",
+  "path": "hyperdatasets/webapp/webapp_dataviews"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_hyperdatasets_webapp_webapp_exp_comparing_.md",
+  "title": "Comparing Dataviews | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/hyperdatasets/webapp/webapp_exp_comparing/",
+  "path": "hyperdatasets/webapp/webapp_exp_comparing"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_hyperdatasets_webapp_webapp_exp_modifying_.md",
+  "title": "Modifying Dataviews | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/hyperdatasets/webapp/webapp_exp_modifying/",
+  "path": "hyperdatasets/webapp/webapp_exp_modifying"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_hyperdatasets_webapp_webapp_exp_track_visual_.md",
+  "title": "Task Dataviews | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/hyperdatasets/webapp/webapp_exp_track_visual/",
+  "path": "hyperdatasets/webapp/webapp_exp_track_visual"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_integrations_.md",
+  "title": "ClearML Integrations | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/integrations/",
+  "path": "integrations"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_integrations_accelerate_.md",
+  "title": "Accelerate | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/integrations/accelerate/",
+  "path": "integrations/accelerate"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_integrations_autokeras_.md",
+  "title": "AutoKeras | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/integrations/autokeras/",
+  "path": "integrations/autokeras"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_integrations_catboost_.md",
+  "title": "CatBoost | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/integrations/catboost/",
+  "path": "integrations/catboost"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_integrations_click_.md",
+  "title": "Click | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/integrations/click/",
+  "path": "integrations/click"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_integrations_fastai_.md",
+  "title": "Fast.ai | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/integrations/fastai/",
+  "path": "integrations/fastai"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_integrations_hydra_.md",
+  "title": "Hydra | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/integrations/hydra/",
+  "path": "integrations/hydra"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_integrations_ignite_.md",
+  "title": "PyTorch Ignite | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/integrations/ignite/",
+  "path": "integrations/ignite"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_integrations_jsonargparse_.md",
+  "title": "jsonargparse | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/integrations/jsonargparse/",
+  "path": "integrations/jsonargparse"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_integrations_keras_.md",
+  "title": "Keras | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/integrations/keras/",
+  "path": "integrations/keras"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_integrations_keras_tuner_.md",
+  "title": "Keras Tuner | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/integrations/keras_tuner/",
+  "path": "integrations/keras_tuner"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_integrations_langchain_.md",
+  "title": "LangChain | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/integrations/langchain/",
+  "path": "integrations/langchain"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_integrations_lightgbm_.md",
+  "title": "LightGBM | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/integrations/lightgbm/",
+  "path": "integrations/lightgbm"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_integrations_matplotlib_.md",
+  "title": "Matplotlib | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/integrations/matplotlib/",
+  "path": "integrations/matplotlib"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_integrations_megengine_.md",
+  "title": "MegEngine | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/integrations/megengine/",
+  "path": "integrations/megengine"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_integrations_mmcv_.md",
+  "title": "MMCV v1.x | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/integrations/mmcv/",
+  "path": "integrations/mmcv"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_integrations_mmengine_.md",
+  "title": "MMEngine | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/integrations/mmengine/",
+  "path": "integrations/mmengine"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_integrations_monai_.md",
+  "title": "MONAI | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/integrations/monai/",
+  "path": "integrations/monai"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_integrations_optuna_.md",
+  "title": "Optuna | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/integrations/optuna/",
+  "path": "integrations/optuna"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_integrations_python_fire_.md",
+  "title": "Python Fire | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/integrations/python_fire/",
+  "path": "integrations/python_fire"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_integrations_pytorch_.md",
+  "title": "PyTorch | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/integrations/pytorch/",
+  "path": "integrations/pytorch"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_integrations_pytorch_lightning_.md",
+  "title": "PyTorch Lightning | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/integrations/pytorch_lightning/",
+  "path": "integrations/pytorch_lightning"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_integrations_scikit_learn_.md",
+  "title": "scikit-learn | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/integrations/scikit_learn/",
+  "path": "integrations/scikit_learn"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_integrations_seaborn_.md",
+  "title": "Seaborn | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/integrations/seaborn/",
+  "path": "integrations/seaborn"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_integrations_splunk_.md",
+  "title": "Splunk | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/integrations/splunk/",
+  "path": "integrations/splunk"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_integrations_storage_.md",
+  "title": "Storage | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/integrations/storage/",
+  "path": "integrations/storage"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_integrations_tao_.md",
+  "title": "Nvidia TAO | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/integrations/tao/",
+  "path": "integrations/tao"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_integrations_tensorboard_.md",
+  "title": "TensorBoard | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/integrations/tensorboard/",
+  "path": "integrations/tensorboard"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_integrations_tensorboardx_.md",
+  "title": "TensorboardX | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/integrations/tensorboardx/",
+  "path": "integrations/tensorboardx"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_integrations_tensorflow_.md",
+  "title": "TensorFlow | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/integrations/tensorflow/",
+  "path": "integrations/tensorflow"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_integrations_transformers_.md",
+  "title": "Transformers | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/integrations/transformers/",
+  "path": "integrations/transformers"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_integrations_xgboost_.md",
+  "title": "XGBoost | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/integrations/xgboost/",
+  "path": "integrations/xgboost"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_integrations_yolov5_.md",
+  "title": "YOLOv5 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/integrations/yolov5/",
+  "path": "integrations/yolov5"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_integrations_yolov8_.md",
+  "title": "YOLOv8 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/integrations/yolov8/",
+  "path": "integrations/yolov8"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_model_registry_.md",
+  "title": "Model Registry | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/model_registry/",
+  "path": "model_registry"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_pipelines_.md",
+  "title": "ClearML Pipelines | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/pipelines/",
+  "path": "pipelines"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_pipelines_pipelines_sdk_function_decorators_.md",
+  "title": "PipelineDecorator | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/pipelines/pipelines_sdk_function_decorators/",
+  "path": "pipelines/pipelines_sdk_function_decorators"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_pipelines_pipelines_sdk_tasks_.md",
+  "title": "PipelineController | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/pipelines/pipelines_sdk_tasks/",
+  "path": "pipelines/pipelines_sdk_tasks"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_api_.md",
+  "title": "ClearML REST API Reference | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/api/",
+  "path": "references/api"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_api_debug_.md",
+  "title": "debug | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/api/debug/",
+  "path": "references/api/debug"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_api_definitions_.md",
+  "title": "API Definitions | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/api/definitions/",
+  "path": "references/api/definitions"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_api_events_.md",
+  "title": "events | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/api/events/",
+  "path": "references/api/events"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_api_login_.md",
+  "title": "login | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/api/login/",
+  "path": "references/api/login"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_api_models_.md",
+  "title": "models | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/api/models/",
+  "path": "references/api/models"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_api_pipelines_.md",
+  "title": "pipelines | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/api/pipelines/",
+  "path": "references/api/pipelines"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_api_projects_.md",
+  "title": "projects | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/api/projects/",
+  "path": "references/api/projects"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_api_queues_.md",
+  "title": "queues | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/api/queues/",
+  "path": "references/api/queues"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_api_reports_.md",
+  "title": "reports | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/api/reports/",
+  "path": "references/api/reports"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_api_serving_.md",
+  "title": "serving | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/api/serving/",
+  "path": "references/api/serving"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_api_tasks_.md",
+  "title": "tasks | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/api/tasks/",
+  "path": "references/api/tasks"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_api_workers_.md",
+  "title": "workers | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/api/workers/",
+  "path": "references/api/workers"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_enterprise_apps_.md",
+  "title": "apps | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/enterprise/apps/",
+  "path": "references/enterprise/apps"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_enterprise_auth_.md",
+  "title": "auth | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/enterprise/auth/",
+  "path": "references/enterprise/auth"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_enterprise_datasets_.md",
+  "title": "datasets | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/enterprise/datasets/",
+  "path": "references/enterprise/datasets"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_enterprise_debug_.md",
+  "title": "debug | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/enterprise/debug/",
+  "path": "references/enterprise/debug"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_enterprise_definitions_.md",
+  "title": "API Definitions | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/enterprise/definitions/",
+  "path": "references/enterprise/definitions"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_enterprise_events_.md",
+  "title": "events | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/enterprise/events/",
+  "path": "references/enterprise/events"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_enterprise_frames_.md",
+  "title": "frames | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/enterprise/frames/",
+  "path": "references/enterprise/frames"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_enterprise_login_.md",
+  "title": "login | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/enterprise/login/",
+  "path": "references/enterprise/login"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_enterprise_models_.md",
+  "title": "models | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/enterprise/models/",
+  "path": "references/enterprise/models"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_enterprise_organization_.md",
+  "title": "organization | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/enterprise/organization/",
+  "path": "references/enterprise/organization"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_enterprise_permissions_.md",
+  "title": "permissions | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/enterprise/permissions/",
+  "path": "references/enterprise/permissions"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_enterprise_pipelines_.md",
+  "title": "pipelines | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/enterprise/pipelines/",
+  "path": "references/enterprise/pipelines"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_enterprise_projects_.md",
+  "title": "projects | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/enterprise/projects/",
+  "path": "references/enterprise/projects"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_enterprise_queues_.md",
+  "title": "queues | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/enterprise/queues/",
+  "path": "references/enterprise/queues"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_enterprise_reports_.md",
+  "title": "reports | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/enterprise/reports/",
+  "path": "references/enterprise/reports"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_enterprise_resources_.md",
+  "title": "resources | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/enterprise/resources/",
+  "path": "references/enterprise/resources"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_enterprise_routers_.md",
+  "title": "routers | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/enterprise/routers/",
+  "path": "references/enterprise/routers"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_enterprise_server_.md",
+  "title": "server | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/enterprise/server/",
+  "path": "references/enterprise/server"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_enterprise_serving_.md",
+  "title": "serving | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/enterprise/serving/",
+  "path": "references/enterprise/serving"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_enterprise_sso_.md",
+  "title": "sso | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/enterprise/sso/",
+  "path": "references/enterprise/sso"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_enterprise_storage_.md",
+  "title": "storage | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/enterprise/storage/",
+  "path": "references/enterprise/storage"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_enterprise_system_.md",
+  "title": "system | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/enterprise/system/",
+  "path": "references/enterprise/system"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_enterprise_tasks_.md",
+  "title": "tasks | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/enterprise/tasks/",
+  "path": "references/enterprise/tasks"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_enterprise_tenants_.md",
+  "title": "tenants | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/enterprise/tenants/",
+  "path": "references/enterprise/tenants"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_enterprise_users_.md",
+  "title": "users | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/enterprise/users/",
+  "path": "references/enterprise/users"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_enterprise_variables_.md",
+  "title": "variables | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/enterprise/variables/",
+  "path": "references/enterprise/variables"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_enterprise_workers_.md",
+  "title": "workers | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/enterprise/workers/",
+  "path": "references/enterprise/workers"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_hpd_overview_.md",
+  "title": "Hyper-Datasets | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/hpd_overview/",
+  "path": "references/hpd_overview"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_hyperdataset_.md",
+  "title": "Dataset | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/hyperdataset/",
+  "path": "references/hyperdataset"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_hyperdataset_annotation_.md",
+  "title": "Annotation | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/hyperdataset/annotation/",
+  "path": "references/hyperdataset/annotation"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_hyperdataset_dataview_.md",
+  "title": "DataView | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/hyperdataset/dataview/",
+  "path": "references/hyperdataset/dataview"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_hyperdataset_framegroup_.md",
+  "title": "FrameGroup | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/hyperdataset/framegroup/",
+  "path": "references/hyperdataset/framegroup"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_hyperdataset_hyperdatasetversion_.md",
+  "title": "DatasetVersion | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/hyperdataset/hyperdatasetversion/",
+  "path": "references/hyperdataset/hyperdatasetversion"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_hyperdataset_singleframe_.md",
+  "title": "SingleFrame | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/hyperdataset/singleframe/",
+  "path": "references/hyperdataset/singleframe"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_sdk_automation_controller_pipelinecontroller_.md",
+  "title": "PipelineController | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/sdk/automation_controller_pipelinecontroller/",
+  "path": "references/sdk/automation_controller_pipelinecontroller"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_sdk_automation_controller_pipelinedecorator_.md",
+  "title": "PipelineDecorator | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/sdk/automation_controller_pipelinedecorator/",
+  "path": "references/sdk/automation_controller_pipelinedecorator"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_sdk_automation_job_clearmljob_.md",
+  "title": "ClearmlJob | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/sdk/automation_job_clearmljob/",
+  "path": "references/sdk/automation_job_clearmljob"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_sdk_dataset_.md",
+  "title": "Dataset | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/sdk/dataset/",
+  "path": "references/sdk/dataset"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_sdk_hpd_dataentry_.md",
+  "title": "DataEntry | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/sdk/hpd_dataentry/",
+  "path": "references/sdk/hpd_dataentry"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_sdk_hpd_dataentryimage_.md",
+  "title": "DataEntryImage | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/sdk/hpd_dataentryimage/",
+  "path": "references/sdk/hpd_dataentryimage"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_sdk_hpd_datasubentry_.md",
+  "title": "DataSubEntry | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/sdk/hpd_datasubentry/",
+  "path": "references/sdk/hpd_datasubentry"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_sdk_hpd_datasubentryimage_.md",
+  "title": "DataSubEntryImage | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/sdk/hpd_datasubentryimage/",
+  "path": "references/sdk/hpd_datasubentryimage"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_sdk_hpd_dataview_.md",
+  "title": "DataView | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/sdk/hpd_dataview/",
+  "path": "references/sdk/hpd_dataview"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_sdk_hpd_hyperdataset_.md",
+  "title": "HyperDataset | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/sdk/hpd_hyperdataset/",
+  "path": "references/sdk/hpd_hyperdataset"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_sdk_hpd_hyperdatasetmanagement_.md",
+  "title": "HyperDatasetManagement | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/sdk/hpd_hyperdatasetmanagement/",
+  "path": "references/sdk/hpd_hyperdatasetmanagement"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_sdk_hpd_hyperdatasetquery_.md",
+  "title": "HyperDatasetQuery | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/sdk/hpd_hyperdatasetquery/",
+  "path": "references/sdk/hpd_hyperdatasetquery"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_sdk_hpo_hpbandster_bandster_optimizerbohb_.md",
+  "title": "OptimizerBOHB | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/sdk/hpo_hpbandster_bandster_optimizerbohb/",
+  "path": "references/sdk/hpo_hpbandster_bandster_optimizerbohb"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_sdk_hpo_optimization_gridsearch_.md",
+  "title": "GridSearch | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/sdk/hpo_optimization_gridsearch/",
+  "path": "references/sdk/hpo_optimization_gridsearch"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_sdk_hpo_optimization_hyperparameteroptimizer_.md",
+  "title": "HyperParameterOptimizer | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/sdk/hpo_optimization_hyperparameteroptimizer/",
+  "path": "references/sdk/hpo_optimization_hyperparameteroptimizer"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_sdk_hpo_optimization_randomsearch_.md",
+  "title": "RandomSearch | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/sdk/hpo_optimization_randomsearch/",
+  "path": "references/sdk/hpo_optimization_randomsearch"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_sdk_hpo_optuna_optuna_optimizeroptuna_.md",
+  "title": "OptimizerOptuna | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/sdk/hpo_optuna_optuna_optimizeroptuna/",
+  "path": "references/sdk/hpo_optuna_optuna_optimizeroptuna"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_sdk_hpo_parameters_discreteparameterrange_.md",
+  "title": "DiscreteParameterRange | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/sdk/hpo_parameters_discreteparameterrange/",
+  "path": "references/sdk/hpo_parameters_discreteparameterrange"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_sdk_hpo_parameters_parameterset_.md",
+  "title": "ParameterSet | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/sdk/hpo_parameters_parameterset/",
+  "path": "references/sdk/hpo_parameters_parameterset"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_sdk_hpo_parameters_uniformintegerparameterrange_.md",
+  "title": "UniformIntegerParameterRange | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/sdk/hpo_parameters_uniformintegerparameterrange/",
+  "path": "references/sdk/hpo_parameters_uniformintegerparameterrange"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_sdk_hpo_parameters_uniformparameterrange_.md",
+  "title": "UniformParameterRange | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/sdk/hpo_parameters_uniformparameterrange/",
+  "path": "references/sdk/hpo_parameters_uniformparameterrange"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_sdk_http_router_.md",
+  "title": "HttpRouter | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/sdk/http_router/",
+  "path": "references/sdk/http_router"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_sdk_logger_.md",
+  "title": "Logger | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/sdk/logger/",
+  "path": "references/sdk/logger"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_sdk_model_inputmodel_.md",
+  "title": "InputModel | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/sdk/model_inputmodel/",
+  "path": "references/sdk/model_inputmodel"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_sdk_model_model_.md",
+  "title": "Model | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/sdk/model_model/",
+  "path": "references/sdk/model_model"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_sdk_model_outputmodel_.md",
+  "title": "OutputModel | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/sdk/model_outputmodel/",
+  "path": "references/sdk/model_outputmodel"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_sdk_scheduler_.md",
+  "title": "TaskScheduler | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/sdk/scheduler/",
+  "path": "references/sdk/scheduler"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_sdk_storage_.md",
+  "title": "StorageManager | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/sdk/storage/",
+  "path": "references/sdk/storage"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_sdk_task_.md",
+  "title": "Task | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/sdk/task/",
+  "path": "references/sdk/task"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_references_sdk_trigger_.md",
+  "title": "TriggerScheduler | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/references/sdk/trigger/",
+  "path": "references/sdk/trigger"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_appgw_ver_2_13_.md",
+  "title": "Version 2.13 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/appgw/ver_2_13/",
+  "path": "release_notes/appgw/ver_2_13"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_appgw_ver_2_14_.md",
+  "title": "Version 2.14 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/appgw/ver_2_14/",
+  "path": "release_notes/appgw/ver_2_14"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_apps_containerized_app_.md",
+  "title": "Containerized Application Launcher | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/apps/containerized_app/",
+  "path": "release_notes/apps/containerized_app"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_apps_embedding_model_deployment_.md",
+  "title": "Embedding Model Deployment | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/apps/embedding_model_deployment/",
+  "path": "release_notes/apps/embedding_model_deployment"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_apps_jupyterlab_.md",
+  "title": "Jupyter Lab | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/apps/jupyterlab/",
+  "path": "release_notes/apps/jupyterlab"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_apps_llama_model_deployment_.md",
+  "title": "Llama.cpp Model Deployment | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/apps/llama_model_deployment/",
+  "path": "release_notes/apps/llama_model_deployment"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_apps_llm_ui_.md",
+  "title": "LLM UI | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/apps/llm_ui/",
+  "path": "release_notes/apps/llm_ui"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_apps_milvus_.md",
+  "title": "Milvus | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/apps/milvus/",
+  "path": "release_notes/apps/milvus"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_apps_nvidia_nim_.md",
+  "title": "NVIDIA NIM | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/apps/nvidia_nim/",
+  "path": "release_notes/apps/nvidia_nim"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_apps_qdrant_.md",
+  "title": "Qdrant | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/apps/qdrant/",
+  "path": "release_notes/apps/qdrant"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_apps_sglang_.md",
+  "title": "SGLang | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/apps/sglang/",
+  "path": "release_notes/apps/sglang"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_apps_ssh_session_.md",
+  "title": "SSH Session | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/apps/ssh_session/",
+  "path": "release_notes/apps/ssh_session"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_apps_task_scheduler_.md",
+  "title": "Task Scheduler | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/apps/task_scheduler/",
+  "path": "release_notes/apps/task_scheduler"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_apps_vllm_model_deployment_.md",
+  "title": "vLLM Model Deployment | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/apps/vllm_model_deployment/",
+  "path": "release_notes/apps/vllm_model_deployment"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_apps_vm_desktop_.md",
+  "title": "Virtual Machine Remote Desktop | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/apps/vm_desktop/",
+  "path": "release_notes/apps/vm_desktop"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_apps_vs_code_.md",
+  "title": "VS Code | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/apps/vs_code/",
+  "path": "release_notes/apps/vs_code"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_autoscalers_aws_autoscaler_.md",
+  "title": "AWS Autoscaler | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/autoscalers/aws_autoscaler/",
+  "path": "release_notes/autoscalers/aws_autoscaler"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_autoscalers_gcp_autoscaler_.md",
+  "title": "GCP Autoscaler | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/autoscalers/gcp_autoscaler/",
+  "path": "release_notes/autoscalers/gcp_autoscaler"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_agent_ver_0_12_.md",
+  "title": "Version 0.12 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_agent/ver_0_12/",
+  "path": "release_notes/clearml_agent/ver_0_12"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_agent_ver_0_13_.md",
+  "title": "Version 0.13 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_agent/ver_0_13/",
+  "path": "release_notes/clearml_agent/ver_0_13"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_agent_ver_0_14_.md",
+  "title": "Version 0.14 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_agent/ver_0_14/",
+  "path": "release_notes/clearml_agent/ver_0_14"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_agent_ver_0_15_.md",
+  "title": "Version 0.15 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_agent/ver_0_15/",
+  "path": "release_notes/clearml_agent/ver_0_15"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_agent_ver_0_16_.md",
+  "title": "Version 0.16 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_agent/ver_0_16/",
+  "path": "release_notes/clearml_agent/ver_0_16"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_agent_ver_0_17_.md",
+  "title": "Version 0.17 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_agent/ver_0_17/",
+  "path": "release_notes/clearml_agent/ver_0_17"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_agent_ver_1_0_.md",
+  "title": "Version 1.0 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_agent/ver_1_0/",
+  "path": "release_notes/clearml_agent/ver_1_0"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_agent_ver_1_1_.md",
+  "title": "Version 1.1 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_agent/ver_1_1/",
+  "path": "release_notes/clearml_agent/ver_1_1"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_agent_ver_1_2_.md",
+  "title": "Version 1.2 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_agent/ver_1_2/",
+  "path": "release_notes/clearml_agent/ver_1_2"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_agent_ver_1_3_.md",
+  "title": "Version 1.3 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_agent/ver_1_3/",
+  "path": "release_notes/clearml_agent/ver_1_3"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_agent_ver_1_4_.md",
+  "title": "Version 1.4 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_agent/ver_1_4/",
+  "path": "release_notes/clearml_agent/ver_1_4"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_agent_ver_1_5_.md",
+  "title": "Version 1.5 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_agent/ver_1_5/",
+  "path": "release_notes/clearml_agent/ver_1_5"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_agent_ver_1_6_.md",
+  "title": "Version 1.6 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_agent/ver_1_6/",
+  "path": "release_notes/clearml_agent/ver_1_6"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_agent_ver_1_7_.md",
+  "title": "Version 1.7 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_agent/ver_1_7/",
+  "path": "release_notes/clearml_agent/ver_1_7"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_agent_ver_1_8_.md",
+  "title": "Version 1.8 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_agent/ver_1_8/",
+  "path": "release_notes/clearml_agent/ver_1_8"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_agent_ver_1_9_.md",
+  "title": "Version 1.9 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_agent/ver_1_9/",
+  "path": "release_notes/clearml_agent/ver_1_9"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_agent_ver_2_0_.md",
+  "title": "Version 2.0 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_agent/ver_2_0/",
+  "path": "release_notes/clearml_agent/ver_2_0"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_agent_ver_3_0_.md",
+  "title": "Version 3.0 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_agent/ver_3_0/",
+  "path": "release_notes/clearml_agent/ver_3_0"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_enterprise_ver_3_20_.md",
+  "title": "Version 3.20 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/enterprise/ver_3_20/",
+  "path": "release_notes/clearml_server/enterprise/ver_3_20"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_enterprise_ver_3_21_.md",
+  "title": "Version 3.21 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/enterprise/ver_3_21/",
+  "path": "release_notes/clearml_server/enterprise/ver_3_21"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_enterprise_ver_3_22_.md",
+  "title": "Version 3.22 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/enterprise/ver_3_22/",
+  "path": "release_notes/clearml_server/enterprise/ver_3_22"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_enterprise_ver_3_23_.md",
+  "title": "Version 3.23 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/enterprise/ver_3_23/",
+  "path": "release_notes/clearml_server/enterprise/ver_3_23"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_enterprise_ver_3_24_.md",
+  "title": "Version 3.24 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/enterprise/ver_3_24/",
+  "path": "release_notes/clearml_server/enterprise/ver_3_24"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_enterprise_ver_3_25_.md",
+  "title": "Version 3.25 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/enterprise/ver_3_25/",
+  "path": "release_notes/clearml_server/enterprise/ver_3_25"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_enterprise_ver_3_26_.md",
+  "title": "Version 3.26 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/enterprise/ver_3_26/",
+  "path": "release_notes/clearml_server/enterprise/ver_3_26"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_enterprise_ver_3_27_.md",
+  "title": "Version 3.27 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/enterprise/ver_3_27/",
+  "path": "release_notes/clearml_server/enterprise/ver_3_27"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_enterprise_ver_3_28_.md",
+  "title": "Version 3.28 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/enterprise/ver_3_28/",
+  "path": "release_notes/clearml_server/enterprise/ver_3_28"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_enterprise_ver_3_29_.md",
+  "title": "Version 3.29 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/enterprise/ver_3_29/",
+  "path": "release_notes/clearml_server/enterprise/ver_3_29"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_open_source_ver_0_10_.md",
+  "title": "Version 0.10 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/open_source/ver_0_10/",
+  "path": "release_notes/clearml_server/open_source/ver_0_10"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_open_source_ver_0_11_.md",
+  "title": "Version 0.11 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/open_source/ver_0_11/",
+  "path": "release_notes/clearml_server/open_source/ver_0_11"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_open_source_ver_0_12_.md",
+  "title": "Version 0.12 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/open_source/ver_0_12/",
+  "path": "release_notes/clearml_server/open_source/ver_0_12"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_open_source_ver_0_13_.md",
+  "title": "Version 0.13 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/open_source/ver_0_13/",
+  "path": "release_notes/clearml_server/open_source/ver_0_13"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_open_source_ver_0_14_.md",
+  "title": "Version 0.14 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/open_source/ver_0_14/",
+  "path": "release_notes/clearml_server/open_source/ver_0_14"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_open_source_ver_0_15_.md",
+  "title": "Version 0.15 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/open_source/ver_0_15/",
+  "path": "release_notes/clearml_server/open_source/ver_0_15"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_open_source_ver_0_16_.md",
+  "title": "Version 0.16 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/open_source/ver_0_16/",
+  "path": "release_notes/clearml_server/open_source/ver_0_16"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_open_source_ver_0_17_.md",
+  "title": "Version 0.17 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/open_source/ver_0_17/",
+  "path": "release_notes/clearml_server/open_source/ver_0_17"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_open_source_ver_1_0_.md",
+  "title": "Version 1.0 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/open_source/ver_1_0/",
+  "path": "release_notes/clearml_server/open_source/ver_1_0"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_open_source_ver_1_10_.md",
+  "title": "Version 1.10 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/open_source/ver_1_10/",
+  "path": "release_notes/clearml_server/open_source/ver_1_10"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_open_source_ver_1_11_.md",
+  "title": "Version 1.11 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/open_source/ver_1_11/",
+  "path": "release_notes/clearml_server/open_source/ver_1_11"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_open_source_ver_1_12_.md",
+  "title": "Version 1.12 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/open_source/ver_1_12/",
+  "path": "release_notes/clearml_server/open_source/ver_1_12"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_open_source_ver_1_13_.md",
+  "title": "Version 1.13 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/open_source/ver_1_13/",
+  "path": "release_notes/clearml_server/open_source/ver_1_13"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_open_source_ver_1_14_.md",
+  "title": "Version 1.14 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/open_source/ver_1_14/",
+  "path": "release_notes/clearml_server/open_source/ver_1_14"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_open_source_ver_1_15_.md",
+  "title": "Version 1.15 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/open_source/ver_1_15/",
+  "path": "release_notes/clearml_server/open_source/ver_1_15"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_open_source_ver_1_16_.md",
+  "title": "Version 1.16 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/open_source/ver_1_16/",
+  "path": "release_notes/clearml_server/open_source/ver_1_16"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_open_source_ver_1_17_.md",
+  "title": "Version 1.17 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/open_source/ver_1_17/",
+  "path": "release_notes/clearml_server/open_source/ver_1_17"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_open_source_ver_1_1_.md",
+  "title": "Version 1.1 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/open_source/ver_1_1/",
+  "path": "release_notes/clearml_server/open_source/ver_1_1"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_open_source_ver_1_2_.md",
+  "title": "Version 1.2 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/open_source/ver_1_2/",
+  "path": "release_notes/clearml_server/open_source/ver_1_2"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_open_source_ver_1_3_.md",
+  "title": "Version 1.3 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/open_source/ver_1_3/",
+  "path": "release_notes/clearml_server/open_source/ver_1_3"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_open_source_ver_1_4_.md",
+  "title": "Version 1.4 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/open_source/ver_1_4/",
+  "path": "release_notes/clearml_server/open_source/ver_1_4"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_open_source_ver_1_5_.md",
+  "title": "Version 1.5 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/open_source/ver_1_5/",
+  "path": "release_notes/clearml_server/open_source/ver_1_5"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_open_source_ver_1_6_.md",
+  "title": "Version 1.6 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/open_source/ver_1_6/",
+  "path": "release_notes/clearml_server/open_source/ver_1_6"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_open_source_ver_1_7_.md",
+  "title": "Version 1.7 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/open_source/ver_1_7/",
+  "path": "release_notes/clearml_server/open_source/ver_1_7"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_open_source_ver_1_8_.md",
+  "title": "Version 1.8 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/open_source/ver_1_8/",
+  "path": "release_notes/clearml_server/open_source/ver_1_8"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_open_source_ver_1_9_.md",
+  "title": "Version 1.9 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/open_source/ver_1_9/",
+  "path": "release_notes/clearml_server/open_source/ver_1_9"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_open_source_ver_2_0_.md",
+  "title": "Version 2.0 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/open_source/ver_2_0/",
+  "path": "release_notes/clearml_server/open_source/ver_2_0"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_open_source_ver_2_1_.md",
+  "title": "Version 2.1 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/open_source/ver_2_1/",
+  "path": "release_notes/clearml_server/open_source/ver_2_1"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_open_source_ver_2_2_.md",
+  "title": "Version 2.2 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/open_source/ver_2_2/",
+  "path": "release_notes/clearml_server/open_source/ver_2_2"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_open_source_ver_2_3_.md",
+  "title": "Version 2.3 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/open_source/ver_2_3/",
+  "path": "release_notes/clearml_server/open_source/ver_2_3"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_server_open_source_ver_2_4_.md",
+  "title": "Version 2.4 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_server/open_source/ver_2_4/",
+  "path": "release_notes/clearml_server/open_source/ver_2_4"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_serving_ver_1_0_.md",
+  "title": "Version 1.0 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_serving/ver_1_0/",
+  "path": "release_notes/clearml_serving/ver_1_0"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_serving_ver_1_1_.md",
+  "title": "Version 1.1 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_serving/ver_1_1/",
+  "path": "release_notes/clearml_serving/ver_1_1"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_serving_ver_1_2_.md",
+  "title": "Version 1.2 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_serving/ver_1_2/",
+  "path": "release_notes/clearml_serving/ver_1_2"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_clearml_serving_ver_1_3_.md",
+  "title": "Version 1.3 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/clearml_serving/ver_1_3/",
+  "path": "release_notes/clearml_serving/ver_1_3"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_helm_clearml-enterprise-agent_6.10_.md",
+  "title": "Version 6.10 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/helm/clearml-enterprise-agent/6.10/",
+  "path": "release_notes/helm/clearml-enterprise-agent/6.10"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_helm_clearml-enterprise-agent_6.11_.md",
+  "title": "Version 6.11 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/helm/clearml-enterprise-agent/6.11/",
+  "path": "release_notes/helm/clearml-enterprise-agent/6.11"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_helm_clearml-enterprise-agent_6.12_.md",
+  "title": "Version 6.12 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/helm/clearml-enterprise-agent/6.12/",
+  "path": "release_notes/helm/clearml-enterprise-agent/6.12"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_helm_clearml-enterprise-agent_6.13_.md",
+  "title": "Version 6.13 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/helm/clearml-enterprise-agent/6.13/",
+  "path": "release_notes/helm/clearml-enterprise-agent/6.13"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_helm_clearml-enterprise-agent_6.14_.md",
+  "title": "Version 6.14 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/helm/clearml-enterprise-agent/6.14/",
+  "path": "release_notes/helm/clearml-enterprise-agent/6.14"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_helm_clearml-enterprise-agent_6.9_.md",
+  "title": "Version 6.9 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/helm/clearml-enterprise-agent/6.9/",
+  "path": "release_notes/helm/clearml-enterprise-agent/6.9"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_helm_clearml-enterprise-app-gateway_2.0_.md",
+  "title": "Version 2.0 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/helm/clearml-enterprise-app-gateway/2.0/",
+  "path": "release_notes/helm/clearml-enterprise-app-gateway/2.0"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_helm_clearml-enterprise-app-gateway_2.1_.md",
+  "title": "Version 2.1 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/helm/clearml-enterprise-app-gateway/2.1/",
+  "path": "release_notes/helm/clearml-enterprise-app-gateway/2.1"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_helm_clearml-enterprise-app-gateway_3.0_.md",
+  "title": "Version 3.0 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/helm/clearml-enterprise-app-gateway/3.0/",
+  "path": "release_notes/helm/clearml-enterprise-app-gateway/3.0"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_helm_clearml-enterprise-app-gateway_3.1_.md",
+  "title": "Version 3.1 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/helm/clearml-enterprise-app-gateway/3.1/",
+  "path": "release_notes/helm/clearml-enterprise-app-gateway/3.1"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_helm_clearml-enterprise-app-gateway_3.2_.md",
+  "title": "Version 3.2 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/helm/clearml-enterprise-app-gateway/3.2/",
+  "path": "release_notes/helm/clearml-enterprise-app-gateway/3.2"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_helm_clearml-enterprise-platform-management_1.1_.md",
+  "title": "Version 1.1 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/helm/clearml-enterprise-platform-management/1.1/",
+  "path": "release_notes/helm/clearml-enterprise-platform-management/1.1"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_helm_clearml-enterprise-platform-management_1.2_.md",
+  "title": "Version 1.2 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/helm/clearml-enterprise-platform-management/1.2/",
+  "path": "release_notes/helm/clearml-enterprise-platform-management/1.2"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_helm_clearml-enterprise_10.10_.md",
+  "title": "Version 10.10 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/helm/clearml-enterprise/10.10/",
+  "path": "release_notes/helm/clearml-enterprise/10.10"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_helm_clearml-enterprise_10.11_.md",
+  "title": "Version 10.11 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/helm/clearml-enterprise/10.11/",
+  "path": "release_notes/helm/clearml-enterprise/10.11"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_helm_clearml-enterprise_10.12_.md",
+  "title": "Version 10.12 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/helm/clearml-enterprise/10.12/",
+  "path": "release_notes/helm/clearml-enterprise/10.12"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_helm_clearml-enterprise_10.13_.md",
+  "title": "Version 10.13 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/helm/clearml-enterprise/10.13/",
+  "path": "release_notes/helm/clearml-enterprise/10.13"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_helm_clearml-enterprise_10.7_.md",
+  "title": "Version 10.7 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/helm/clearml-enterprise/10.7/",
+  "path": "release_notes/helm/clearml-enterprise/10.7"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_helm_clearml-enterprise_10.8_.md",
+  "title": "Version 10.8 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/helm/clearml-enterprise/10.8/",
+  "path": "release_notes/helm/clearml-enterprise/10.8"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_helm_clearml-enterprise_10.9_.md",
+  "title": "Version 10.9 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/helm/clearml-enterprise/10.9/",
+  "path": "release_notes/helm/clearml-enterprise/10.9"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_helm_clearml-enterprise_11.0_.md",
+  "title": "Version 11.0 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/helm/clearml-enterprise/11.0/",
+  "path": "release_notes/helm/clearml-enterprise/11.0"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_sdk_enterprise_ver_3_10_.md",
+  "title": "Version 3.10 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/sdk/enterprise/ver_3_10/",
+  "path": "release_notes/sdk/enterprise/ver_3_10"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_sdk_enterprise_ver_3_11_.md",
+  "title": "Version 3.11 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/sdk/enterprise/ver_3_11/",
+  "path": "release_notes/sdk/enterprise/ver_3_11"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_sdk_enterprise_ver_3_12_.md",
+  "title": "Version 3.12 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/sdk/enterprise/ver_3_12/",
+  "path": "release_notes/sdk/enterprise/ver_3_12"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_sdk_enterprise_ver_3_13_.md",
+  "title": "Version 3.13 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/sdk/enterprise/ver_3_13/",
+  "path": "release_notes/sdk/enterprise/ver_3_13"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_sdk_enterprise_ver_3_14_.md",
+  "title": "Version 3.14 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/sdk/enterprise/ver_3_14/",
+  "path": "release_notes/sdk/enterprise/ver_3_14"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_sdk_open_source_ver_0_10_.md",
+  "title": "Version 0.10 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/sdk/open_source/ver_0_10/",
+  "path": "release_notes/sdk/open_source/ver_0_10"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_sdk_open_source_ver_0_11_.md",
+  "title": "Version 0.11 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/sdk/open_source/ver_0_11/",
+  "path": "release_notes/sdk/open_source/ver_0_11"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_sdk_open_source_ver_0_12_.md",
+  "title": "Version 0.12 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/sdk/open_source/ver_0_12/",
+  "path": "release_notes/sdk/open_source/ver_0_12"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_sdk_open_source_ver_0_13_.md",
+  "title": "Version 0.13 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/sdk/open_source/ver_0_13/",
+  "path": "release_notes/sdk/open_source/ver_0_13"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_sdk_open_source_ver_0_14_.md",
+  "title": "Version 0.14 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/sdk/open_source/ver_0_14/",
+  "path": "release_notes/sdk/open_source/ver_0_14"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_sdk_open_source_ver_0_15_.md",
+  "title": "Version 0.15 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/sdk/open_source/ver_0_15/",
+  "path": "release_notes/sdk/open_source/ver_0_15"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_sdk_open_source_ver_0_16_.md",
+  "title": "Version 0.16 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/sdk/open_source/ver_0_16/",
+  "path": "release_notes/sdk/open_source/ver_0_16"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_sdk_open_source_ver_0_17_.md",
+  "title": "Version 0.17 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/sdk/open_source/ver_0_17/",
+  "path": "release_notes/sdk/open_source/ver_0_17"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_sdk_open_source_ver_0_9_.md",
+  "title": "Version 0.9 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/sdk/open_source/ver_0_9/",
+  "path": "release_notes/sdk/open_source/ver_0_9"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_sdk_open_source_ver_1_0_.md",
+  "title": "Version 1.0 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/sdk/open_source/ver_1_0/",
+  "path": "release_notes/sdk/open_source/ver_1_0"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_sdk_open_source_ver_1_10_.md",
+  "title": "Version 1.10 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/sdk/open_source/ver_1_10/",
+  "path": "release_notes/sdk/open_source/ver_1_10"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_sdk_open_source_ver_1_11_.md",
+  "title": "Version 1.11 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/sdk/open_source/ver_1_11/",
+  "path": "release_notes/sdk/open_source/ver_1_11"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_sdk_open_source_ver_1_12_.md",
+  "title": "Version 1.12 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/sdk/open_source/ver_1_12/",
+  "path": "release_notes/sdk/open_source/ver_1_12"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_sdk_open_source_ver_1_13_.md",
+  "title": "Version 1.13 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/sdk/open_source/ver_1_13/",
+  "path": "release_notes/sdk/open_source/ver_1_13"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_sdk_open_source_ver_1_14_.md",
+  "title": "Version 1.14 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/sdk/open_source/ver_1_14/",
+  "path": "release_notes/sdk/open_source/ver_1_14"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_sdk_open_source_ver_1_15_.md",
+  "title": "Version 1.15 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/sdk/open_source/ver_1_15/",
+  "path": "release_notes/sdk/open_source/ver_1_15"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_sdk_open_source_ver_1_16_.md",
+  "title": "Version 1.16 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/sdk/open_source/ver_1_16/",
+  "path": "release_notes/sdk/open_source/ver_1_16"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_sdk_open_source_ver_1_17_.md",
+  "title": "Version 1.17 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/sdk/open_source/ver_1_17/",
+  "path": "release_notes/sdk/open_source/ver_1_17"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_sdk_open_source_ver_1_18_.md",
+  "title": "Version 1.18 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/sdk/open_source/ver_1_18/",
+  "path": "release_notes/sdk/open_source/ver_1_18"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_sdk_open_source_ver_1_1_.md",
+  "title": "Version 1.1 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/sdk/open_source/ver_1_1/",
+  "path": "release_notes/sdk/open_source/ver_1_1"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_sdk_open_source_ver_1_2_.md",
+  "title": "Version 1.2 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/sdk/open_source/ver_1_2/",
+  "path": "release_notes/sdk/open_source/ver_1_2"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_sdk_open_source_ver_1_3_.md",
+  "title": "Version 1.3 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/sdk/open_source/ver_1_3/",
+  "path": "release_notes/sdk/open_source/ver_1_3"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_sdk_open_source_ver_1_4_.md",
+  "title": "Version 1.4 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/sdk/open_source/ver_1_4/",
+  "path": "release_notes/sdk/open_source/ver_1_4"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_sdk_open_source_ver_1_5_.md",
+  "title": "Version 1.5 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/sdk/open_source/ver_1_5/",
+  "path": "release_notes/sdk/open_source/ver_1_5"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_sdk_open_source_ver_1_6_.md",
+  "title": "Version 1.6 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/sdk/open_source/ver_1_6/",
+  "path": "release_notes/sdk/open_source/ver_1_6"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_sdk_open_source_ver_1_7_.md",
+  "title": "Version 1.7 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/sdk/open_source/ver_1_7/",
+  "path": "release_notes/sdk/open_source/ver_1_7"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_sdk_open_source_ver_1_8_.md",
+  "title": "Version 1.8 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/sdk/open_source/ver_1_8/",
+  "path": "release_notes/sdk/open_source/ver_1_8"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_sdk_open_source_ver_1_9_.md",
+  "title": "Version 1.9 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/sdk/open_source/ver_1_9/",
+  "path": "release_notes/sdk/open_source/ver_1_9"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_sdk_open_source_ver_2_0_.md",
+  "title": "Version 2.0 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/sdk/open_source/ver_2_0/",
+  "path": "release_notes/sdk/open_source/ver_2_0"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_release_notes_sdk_open_source_ver_2_1_.md",
+  "title": "Version 2.1 | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/release_notes/sdk/open_source/ver_2_1/",
+  "path": "release_notes/sdk/open_source/ver_2_1"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_remote_session_.md",
+  "title": "Remote IDE | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/remote_session/",
+  "path": "remote_session"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_user_management_access_rules_.md",
+  "title": "Access Rules (RBAC) | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/user_management/access_rules/",
+  "path": "user_management/access_rules"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_user_management_admin_vaults_.md",
+  "title": "Administrator Vaults | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/user_management/admin_vaults/",
+  "path": "user_management/admin_vaults"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_user_management_identity_providers_.md",
+  "title": "Identity Providers | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/user_management/identity_providers/",
+  "path": "user_management/identity_providers"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_user_management_user_groups_.md",
+  "title": "User Groups | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/user_management/user_groups/",
+  "path": "user_management/user_groups"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_applications_apps_aws_autoscaler_.md",
+  "title": "AWS Autoscaler | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/applications/apps_aws_autoscaler/",
+  "path": "webapp/applications/apps_aws_autoscaler"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_applications_apps_container_launcher_.md",
+  "title": "Containerized Application Launcher | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/applications/apps_container_launcher/",
+  "path": "webapp/applications/apps_container_launcher"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_applications_apps_dashboard_.md",
+  "title": "Project Dashboard | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/applications/apps_dashboard/",
+  "path": "webapp/applications/apps_dashboard"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_applications_apps_embed_model_deployment_.md",
+  "title": "Embedding Model Deployment | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/applications/apps_embed_model_deployment/",
+  "path": "webapp/applications/apps_embed_model_deployment"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_applications_apps_gcp_autoscaler_.md",
+  "title": "GCP Autoscaler | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/applications/apps_gcp_autoscaler/",
+  "path": "webapp/applications/apps_gcp_autoscaler"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_applications_apps_gradio_.md",
+  "title": "Gradio Launcher | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/applications/apps_gradio/",
+  "path": "webapp/applications/apps_gradio"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_applications_apps_hpo_.md",
+  "title": "Hyperparameter Optimization | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/applications/apps_hpo/",
+  "path": "webapp/applications/apps_hpo"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_applications_apps_jupyter_lab_.md",
+  "title": "Jupyter Lab | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/applications/apps_jupyter_lab/",
+  "path": "webapp/applications/apps_jupyter_lab"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_applications_apps_llama_deployment_.md",
+  "title": "Llama.cpp Model Deployment | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/applications/apps_llama_deployment/",
+  "path": "webapp/applications/apps_llama_deployment"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_applications_apps_llm_ui_.md",
+  "title": "LLM UI | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/applications/apps_llm_ui/",
+  "path": "webapp/applications/apps_llm_ui"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_applications_apps_milvus_.md",
+  "title": "Milvus DB Session | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/applications/apps_milvus/",
+  "path": "webapp/applications/apps_milvus"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_applications_apps_model_deployment_.md",
+  "title": "vLLM Model Deployment | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/applications/apps_model_deployment/",
+  "path": "webapp/applications/apps_model_deployment"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_applications_apps_multi_node_trainer_.md",
+  "title": "Multi-Node Trainer | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/applications/apps_multi_node_trainer/",
+  "path": "webapp/applications/apps_multi_node_trainer"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_applications_apps_nvidia_nim_.md",
+  "title": "NVIDIA NIM | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/applications/apps_nvidia_nim/",
+  "path": "webapp/applications/apps_nvidia_nim"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_applications_apps_overview_.md",
+  "title": "ClearML Applications | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/applications/apps_overview/",
+  "path": "webapp/applications/apps_overview"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_applications_apps_qdrant_.md",
+  "title": "Qdrant DB Session | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/applications/apps_qdrant/",
+  "path": "webapp/applications/apps_qdrant"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_applications_apps_sglang_.md",
+  "title": "SGLang Model Deployment | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/applications/apps_sglang/",
+  "path": "webapp/applications/apps_sglang"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_applications_apps_ssh_session_.md",
+  "title": "SSH Session | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/applications/apps_ssh_session/",
+  "path": "webapp/applications/apps_ssh_session"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_applications_apps_streamlit_.md",
+  "title": "Streamlit Launcher | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/applications/apps_streamlit/",
+  "path": "webapp/applications/apps_streamlit"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_applications_apps_task_scheduler_.md",
+  "title": "Task Scheduler | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/applications/apps_task_scheduler/",
+  "path": "webapp/applications/apps_task_scheduler"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_applications_apps_trigger_manager_.md",
+  "title": "Trigger Manager | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/applications/apps_trigger_manager/",
+  "path": "webapp/applications/apps_trigger_manager"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_applications_apps_vm_desktop_.md",
+  "title": "Virtual Machine Remote Desktop | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/applications/apps_vm_desktop/",
+  "path": "webapp/applications/apps_vm_desktop"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_applications_apps_vscode_.md",
+  "title": "VS Code | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/applications/apps_vscode/",
+  "path": "webapp/applications/apps_vscode"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_datasets_webapp_dataset_page_.md",
+  "title": "Datasets Page | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/datasets/webapp_dataset_page/",
+  "path": "webapp/datasets/webapp_dataset_page"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_datasets_webapp_dataset_viewing_.md",
+  "title": "Dataset Details | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/datasets/webapp_dataset_viewing/",
+  "path": "webapp/datasets/webapp_dataset_viewing"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_pipelines_webapp_pipeline_page_.md",
+  "title": "Pipelines Page | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/pipelines/webapp_pipeline_page/",
+  "path": "webapp/pipelines/webapp_pipeline_page"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_pipelines_webapp_pipeline_table_.md",
+  "title": "The Pipeline Run Table | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/pipelines/webapp_pipeline_table/",
+  "path": "webapp/pipelines/webapp_pipeline_table"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_pipelines_webapp_pipeline_viewing_.md",
+  "title": "Pipeline Run Details | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/pipelines/webapp_pipeline_viewing/",
+  "path": "webapp/pipelines/webapp_pipeline_viewing"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_platform_management_center_.md",
+  "title": "Platform Management Center | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/platform_management_center/",
+  "path": "webapp/platform_management_center"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_resource_policies_.md",
+  "title": "Resource Policies | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/resource_policies/",
+  "path": "webapp/resource_policies"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_settings_webapp_settings_access_rules_.md",
+  "title": "Access Rules (RBAC) | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_access_rules/",
+  "path": "webapp/settings/webapp_settings_access_rules"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_settings_webapp_settings_admin_vaults_.md",
+  "title": "Administrator Vaults | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_admin_vaults/",
+  "path": "webapp/settings/webapp_settings_admin_vaults"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_settings_webapp_settings_analytics_.md",
+  "title": "Analytics | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_analytics/",
+  "path": "webapp/settings/webapp_settings_analytics"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_settings_webapp_settings_app_gw_.md",
+  "title": "Application Gateway | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_app_gw/",
+  "path": "webapp/settings/webapp_settings_app_gw"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_settings_webapp_settings_id_providers_.md",
+  "title": "Identity Providers | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_id_providers/",
+  "path": "webapp/settings/webapp_settings_id_providers"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_settings_webapp_settings_overview_.md",
+  "title": "Settings Page | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_overview/",
+  "path": "webapp/settings/webapp_settings_overview"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_settings_webapp_settings_profile_.md",
+  "title": "User Settings | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_profile/",
+  "path": "webapp/settings/webapp_settings_profile"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_settings_webapp_settings_resource_configs_.md",
+  "title": "Resource Configuration | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_resource_configs/",
+  "path": "webapp/settings/webapp_settings_resource_configs"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_settings_webapp_settings_storage_credentials_.md",
+  "title": "Storage Cleanup | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_storage_credentials/",
+  "path": "webapp/settings/webapp_settings_storage_credentials"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_settings_webapp_settings_storage_volumes_.md",
+  "title": "Volumes | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_storage_volumes/",
+  "path": "webapp/settings/webapp_settings_storage_volumes"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_settings_webapp_settings_ui_customization_.md",
+  "title": "UI Customization | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_ui_customization/",
+  "path": "webapp/settings/webapp_settings_ui_customization"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_settings_webapp_settings_usage_billing_.md",
+  "title": "Billing & Usage | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_usage_billing/",
+  "path": "webapp/settings/webapp_settings_usage_billing"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_settings_webapp_settings_users_.md",
+  "title": "Users & Groups | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_users/",
+  "path": "webapp/settings/webapp_settings_users"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_webapp_exp_comparing_.md",
+  "title": "Comparing Tasks | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/webapp_exp_comparing/",
+  "path": "webapp/webapp_exp_comparing"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_webapp_exp_reproducing_.md",
+  "title": "Reproducing Task Runs | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/webapp_exp_reproducing/",
+  "path": "webapp/webapp_exp_reproducing"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_webapp_exp_sharing_.md",
+  "title": "Sharing Tasks and Models | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/webapp_exp_sharing/",
+  "path": "webapp/webapp_exp_sharing"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_webapp_exp_table_.md",
+  "title": "The Task Table | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/webapp_exp_table/",
+  "path": "webapp/webapp_exp_table"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_webapp_exp_track_visual_.md",
+  "title": "Tracking Tasks and Visualizing Results | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/webapp_exp_track_visual/",
+  "path": "webapp/webapp_exp_track_visual"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_webapp_exp_tuning_.md",
+  "title": "Tuning Tasks | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/webapp_exp_tuning/",
+  "path": "webapp/webapp_exp_tuning"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_webapp_home_.md",
+  "title": "Project Dashboard | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/webapp_home/",
+  "path": "webapp/webapp_home"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_webapp_model_comparing_.md",
+  "title": "Comparing Models | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/webapp_model_comparing/",
+  "path": "webapp/webapp_model_comparing"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_webapp_model_endpoints_.md",
+  "title": "Model Endpoints | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/webapp_model_endpoints/",
+  "path": "webapp/webapp_model_endpoints"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_webapp_model_table_.md",
+  "title": "The Model Table | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/webapp_model_table/",
+  "path": "webapp/webapp_model_table"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_webapp_model_viewing_.md",
+  "title": "Model Details | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/webapp_model_viewing/",
+  "path": "webapp/webapp_model_viewing"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_webapp_orchestration_dash_.md",
+  "title": "Orchestration Dashboard | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/webapp_orchestration_dash/",
+  "path": "webapp/webapp_orchestration_dash"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_webapp_overview_.md",
+  "title": "WebApp | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/webapp_overview/",
+  "path": "webapp/webapp_overview"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_webapp_project_overview_.md",
+  "title": "Project Overview | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/webapp_project_overview/",
+  "path": "webapp/webapp_project_overview"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_webapp_project_workloads_.md",
+  "title": "Project Workloads | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/webapp_project_workloads/",
+  "path": "webapp/webapp_project_workloads"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_webapp_projects_page_.md",
+  "title": "Projects Page | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/webapp_projects_page/",
+  "path": "webapp/webapp_projects_page"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_webapp_reports_.md",
+  "title": "Reports | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/webapp_reports/",
+  "path": "webapp/webapp_reports"
+ },
+ {
+  "file": "clear.ml_docs_latest_docs_webapp_webapp_workers_queues_.md",
+  "title": "Orchestration | ClearML",
+  "url": "https://clear.ml/docs/latest/docs/webapp/webapp_workers_queues/",
+  "path": "webapp/webapp_workers_queues"
+ }
+]

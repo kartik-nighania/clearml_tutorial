@@ -216,3 +216,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+notes.txt
+clearml_docs.zip
+**/.DS_Store
+dataset/

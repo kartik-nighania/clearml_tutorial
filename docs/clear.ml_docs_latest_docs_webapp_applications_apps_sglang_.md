@@ -1,0 +1,200 @@
+---
+url: "https://clear.ml/docs/latest/docs/webapp/applications/apps_sglang/"
+title: "SGLang Model Deployment | ClearML"
+---
+
+[Skip to main content](https://clear.ml/docs/latest/docs/webapp/applications/apps_sglang/#__docusaurus_skipToContent_fallback)
+
+If you ❤️ ️ **ClearML**, ⭐️ us on [GitHub](https://github.com/clearml/clearml)!
+
+On this page
+
+Enterprise Feature
+
+The SGLang Model Deployment App is available under the ClearML Enterprise plan.
+
+The SGLang Model Deployment application enables users to create secure, authenticated LLM endpoints using the SGLang
+serving engine. This application supports various model configurations and customizations to optimize performance and
+resource usage. The SGLang Model Deployment application serves your model on a machine of your choice. Once an app
+instance is running, it serves your model through a secure, publicly accessible network endpoint.
+
+The app supports multi-model hosting and Universal Memory technology, enabling inactive models to be offloaded to other memory options to free GPU resources:
+
+- CPU RAM – via `Automatic CPU Offloading`, `CPU Offload GiB`, and configurable `Max CUDA Memory` limits.
+- Disk storage – via `Disk Swapping` (when `Automatic CPU Offloading` is disabled).
+
+The app monitors endpoint activity and shuts down if the model remains inactive for a specified maximum idle time.
+
+AI Application Gateway
+
+The SGLang Model Deployment app makes use of the App Gateway Router which implements a secure, authenticated
+network endpoint for the model.
+
+If the ClearML AI Application Gateway is not available, the model endpoint might not be accessible.
+For more information, see [AI Application Gateway](https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/appgw).
+
+Once you start a SGLang Model Deployment instance, you can view the following information in its dashboard:
+
+- Status indicator
+  - ![Active instance](https://clear.ml/docs/latest/icons/ico-sglang-active.svg) \- App instance is running and is actively in use
+  - ![Loading instance](https://clear.ml/docs/latest/icons/ico-sglang-loading.svg) \- App instance is setting up
+  - ![Idle instance](https://clear.ml/docs/latest/icons/ico-sglang-idle.svg) \- App instance is idle
+  - ![Stopped instance](https://clear.ml/docs/latest/icons/ico-sglang-stopped.svg) \- App instance is stopped
+- Idle time - Time elapsed since last activity
+- Generate Token - Link to `AI APPLICATION GATEWAY` section of the Settings page, where you can generate a token for accessing your deployed model
+- Deployed models table:
+  - Model name
+  - Endpoint - The publicly accessible URL of the model endpoint. Active model endpoints are also available in the
+    [Model Endpoints](https://clear.ml/docs/latest/docs/webapp/webapp_model_endpoints) table, which allows you to view and compare endpoint details and
+    monitor status over time
+- Command to connect to the deployed model
+  - Select model to generate a `curl` command for connecting to it
+  - Prompt - Provide a prompt to send to the model. This will be added to the `curl` command
+  - The generated `curl` command includes the model's endpoint and prompt. Replace `YOUR_GENERATED_TOKEN` with a valid
+    token generated in the `AI APPLICATION GATEWAY` section of the [Settings](https://clear.ml/docs/latest/docs/webapp/settings/webapp_settings_profile#ai-application-gateway-tokens) page.
+- Total Number of Requests - Number of requests over time
+- Tokens per Second - Number of tokens processed over time
+- Latency - Request response time (ms) over time
+- Endpoint resource monitoring metrics over time
+- CPU usage
+  - Network throughput
+  - Disk performance
+  - Memory performance
+  - GPU utilization
+  - GPU memory usage
+  - GPU temperature
+- Console log - The console log shows the app instance's console output: setup progress, status changes, error messages,
+etc.
+
+![SGLang Model Deployment App](https://clear.ml/docs/latest/assets/images/apps_sglang_dashboard-37b519428909c93dd32e780b0fb7f785.png#light-mode-only)![SGLang Model Deployment App](https://clear.ml/docs/latest/assets/images/apps_sglang_dashboard_dark-94a034e8a6658bea0a3114ce2c1352cd.png#dark-mode-only)
+
+Embedding ClearML Visualization
+
+You can embed plots from the app instance dashboard into [ClearML Reports](https://clear.ml/docs/latest/docs/webapp/webapp_reports) and other third-party platforms that support embedded content
+(e.g. Notion). These visualizations are updated live as the app instance(s) updates. Hover over the plot and click ![Embed code](https://clear.ml/docs/latest/icons/ico-plotly-embed-code.svg)
+to copy the embed code, and navigate to a report to paste the embed code.
+
+## SGLang Model Deployment Instance Configuration [​](https://clear.ml/docs/latest/docs/webapp/applications/apps_sglang/\#sglang-model-deployment-instance-configuration "Direct link to SGLang Model Deployment Instance Configuration")
+
+When configuring a new SGLang Model Deployment instance, you can fill in the required parameters or reuse the
+configuration of a previously launched instance.
+
+Launch an app instance with the configuration of a previously launched instance using one of the following options:
+
+- Cloning a previously launched app instance will open the instance launch form with the original instance's
+configuration prefilled.
+- Importing an app configuration file. You can export the configuration of a previously launched instance as a JSON file
+when viewing its configuration.
+
+The prefilled configuration form can be edited before launching the new app instance.
+
+To configure a new app instance, click `Launch New`![Add new](https://clear.ml/docs/latest/icons/ico-add.svg)
+to open the app's configuration form.
+
+### Configuration Options [​](https://clear.ml/docs/latest/docs/webapp/applications/apps_sglang/\#configuration-options "Direct link to Configuration Options")
+
+note
+
+Administrators can [customize](https://clear.ml/docs/latest/docs/deploying_clearml/enterprise_deploy/app_launch_form_custom) the launch form and
+modify field names and/or available options and defaults.
+
+This section describes the default configuration provided by ClearML.
+
+- **Import Configuration**: Import an app instance configuration file. This will fill the instance launch form with the
+values from the file, which can be modified before launching the app instance
+
+- **Instance name**: Name for the app instance. This will appear in the instance list
+
+- **Service Project - Access Control** \- The ClearML project where the app instance is created. Access is determined by
+project-level permissions (i.e. users with read access can use the app).
+
+- **Queue** \- The [ClearML Queue](https://clear.ml/docs/latest/docs/fundamentals/agents_and_queues#what-is-a-queue) to which the SGLang Model Deployment app
+instance task will be enqueued. Make sure an agent is assigned to that queue.
+
+
+
+Multi-GPU inference
+
+
+
+
+
+To run multi-GPU inference, ensure the queue's pod specification (from the base template and/or `templateOverrides`) defines multiple GPUs. See [GPU Queues with Shared Memory](https://clear.ml/docs/latest/docs/clearml_agent/clearml_agent_custom_workload#example-gpu-queues-with-shared-memory)
+for an example configuration of a queue that allocates multiple GPUs and shared memory.
+
+- **AI Gateway Route** \- Select an available, admin-preconfigured route to use as the service endpoint. If none is selected, an ephemeral endpoint will be created.
+
+- **Model** \- A ClearML Model ID or a HuggingFace model name (e.g. `openai-community/gpt2`)
+
+- **Model Configuration**: Configure the behavior and performance of the language model engine. This allows you to
+customize model selection, parallelism policies, memory management, optimization techniques, and more. See more details
+about [SGLang configuration options](https://docs.sglang.ai/advanced_features/server_arguments.html#model-and-tokenizer)
+(parameter names appear as their command-line form, e.g., "Max Running Requests" is listed as `--max-running-requests`).
+  - CLI - SGLang CLI arguments. If set, these arguments will be passed to SGLang. All other launch form fields will
+    be ignored, except for the `Model` field.
+  - Model - A ClearML Model ID or a HuggingFace model name (e.g. `openai-community/gpt2`)
+  - Model Endpoint Name - The name to be used for API access.
+  - GPUs (Tensor Parallel Size) - Number of GPUs used to load the model. Defaults to the number of GPUs detected on the machine
+- **LoRA Configuration**
+  - Enable LoRA - If checked, enable handling of [LoRA adapters](https://huggingface.co/docs/diffusers/en/training/lora#lora).
+  - LoRA Modules - LoRA module configurations in the format `name=path`. Multiple modules can be specified.
+  - Max LoRAs - Max number of LoRAs in a single batch.
+  - Max LoRA Rank
+  - LoRA Extra Vocabulary Size - Maximum size of extra vocabulary that can be present in a LoRA adapter (added to the base model vocabulary).
+  - LoRA Dtype - Select the data type for LoRA. Select one of the following:
+    - `auto` \- If selected, will default to base model data type.
+    - `float16`
+    - `bfloat16`
+    - `float32`
+  - Max CPU LoRAs - Maximum number of LoRAs to store in CPU memory. Must be greater or equal to the
+    `Max Number of Sequences` field in the General section below. Defaults to `Max Number of Sequences`.
+- **General**: Runtime, performance, caching, and logging settings for the deployed model, and resource limits and
+authentication options. See more details about [SGLang configuration options](https://docs.sglang.ai/advanced_features/server_arguments.html#model-and-tokenizer)
+(parameter names appear as their command-line form, e.g., "Watchdog Timeout" is listed as `--watchdog-timeout`)
+  - Enable Debug Mode: Run deployment in debug mode
+  - Enable Automatic CPU Offloading: Enable multiple models to share GPUs by offloading unused ones to CPU. If `Max CUDA Memory`
+    exceeds GPU capacity, this application will offload the surplus to the CPU RAM, virtually increasing the VRAM
+  - Enable Disk Swapping: Load multiple models on the same GPUs by offloading inactive ones to disk (requires `Automatic CPU Offloading`
+    to be disabled).
+  - Log Requests: Log metadata, inputs, outputs of all requests.
+  - Enable Metrics: Enable logging Prometheus metrics.
+  - Enable Request Time Stats Logging: Record and log the processing time for each individual request to the deployed model.
+  - Disable Chunked Prefix Cache: Disable chunked prefix cache feature for Deepseek.
+  - Disable Fast Image Processor: Adopt base image processor instead of fast image processor.
+  - Enable P2P Check for GPU access
+  - Enable Cache Report: Return number of cached tokens in `usage.prompt_tokens_details` for each `openai` request.
+  - Trust Remote Code: Select to set Hugging Face [`trust_remote_code`](https://huggingface.co/docs/text-generation-inference/main/en/reference/launcher#trustremotecode)
+    to `true`.
+  - HuggingFace Token: Token for accessing HuggingFace models that require authentication
+  - Max CUDA Memory (GiB): The maximum amount of CUDA memory identified by the system. Can exceed the actual hardware
+    memory. The surplus memory will be offloaded to the CPU memory. Only usable on amd64 machines.
+  - CUDA Memory Manager Minimum Threshold: Maximum size (Kb) of the allocated chunks that should not be offloaded to CPU
+    when using automatic CPU offloading. Defaults to `-1` when running on a single GPU, and `66000` (64Mib) when running on
+    multiple GPUs.
+  - Schedule Policy: How incoming requests are prioritized
+    - lpm: Longest Prefix Match: Requests with largest partial match in the prompt cache are prioritized.
+    - random
+    - fcfs: First come, first served. Request processed in order of arrival
+    - dfs-weight: Depth-First Search with weights. Requests prioritized based on a weighted factor
+  - Watchdog Timeout: Set watchdog timeout in seconds.
+  - Load Balance Method: The load balancing strategy for data parallelism.
+  - Log Level: The logging level of all loggers.
+  - Log Level HTTP: The logging level of HTTP server
+  - Log Requests Level: Logging level of requests:
+    - `0`: Log metadata
+    - `1`: Log metadata and partial input/output
+    - `2`: Log every input/output.
+  - Max Running Requests: The maximum number of running requests.
+- **Environment Variables** \- Additional environment variable to set inside the container before launching the application
+
+- **Idle options**:
+  - Idle Time Limit (Hours) - Maximum idle time after which the app instance will shut down
+  - Last Action Report Interval (Seconds) - Frequency at which last activity is reported. Prevents idle shutdown while still active.
+- **Export Configuration** \- Export the app instance configuration as a JSON file, which you can later import to create a
+new instance with the same configuration
+
+
+![SGLang Model Deployment app form](https://clear.ml/docs/latest/assets/images/apps_sglang_form-55b2a7818639c4de6bad612ac6dd8ca5.png#light-mode-only)![SGLang Model Deployment app form](https://clear.ml/docs/latest/assets/images/apps_sglang_form_dark-5cbb2a8c67d9b659f6991e03d15d363e.png#dark-mode-only)
+
+- [SGLang Model Deployment Instance Configuration](https://clear.ml/docs/latest/docs/webapp/applications/apps_sglang/#sglang-model-deployment-instance-configuration)
+  - [Configuration Options](https://clear.ml/docs/latest/docs/webapp/applications/apps_sglang/#configuration-options)
