@@ -1,7 +1,12 @@
 # ClearML Hands-on Lab — Plant Disease Detection (PlantVillage)
 
+**▶ Attendees: one-click start —**
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kartik-nighania/clearml_tutorial/blob/main/workshop/workshop_full.ipynb)
+— open `workshop_full.ipynb` in Google Colab and run it top-to-bottom (all 4 hours in one notebook).
+
 A 4-hour, browser-only workshop that teaches the **full ClearML MLOps loop** on a self-hosted
 open-source server, using a tiny Vision Transformer and the PlantVillage leaf-disease dataset.
+The per-hour files (`hour1..hour4`) are still here for reference; `workshop_full.ipynb` bundles them.
 
 > **The goal is to learn ClearML, not to build a production model.** We deliberately use a small
 > model (ViT-Tiny), a ~1000-image subset, and 1–2 epochs so runs finish in seconds and everyone can
