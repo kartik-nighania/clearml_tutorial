@@ -221,3 +221,8 @@ notes.txt
 clearml_docs.zip
 **/.DS_Store
 dataset/
+
+# Local-only (kept on disk, never pushed): docs mirror, examples, and the Claude skill
+docs/
+coding_examples/
+.claude/

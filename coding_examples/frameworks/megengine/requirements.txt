@@ -1,3 +1,0 @@
-MegEngine ; python_version < '3.9'
-tensorboardX
-clearml>=1.14.4

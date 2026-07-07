@@ -1,5 +1,0 @@
-lightgbm
-scikit-learn
-pandas
-matplotlib
-clearml>=1.14.4

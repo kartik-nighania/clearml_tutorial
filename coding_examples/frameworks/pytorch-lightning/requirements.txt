@@ -1,4 +1,0 @@
-clearml>=1.14.4
-pytorch-lightning >= 1.6.0
-torch
-torchvision
