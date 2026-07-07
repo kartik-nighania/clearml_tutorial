@@ -2,7 +2,7 @@
 Hour 2 — GPU training via a shared queue.
 
 Fine-tunes a tiny Vision Transformer (WinKawaks/vit-tiny-patch16-224, ~5.7M params) on the
-`plantdisease_demo` ClearML dataset (~1000 images, 4 classes) for 1-2 epochs. The point is to
+`plantdisease_demo` ClearML dataset (~1000 images, 4 classes) for 2-3 epochs. The point is to
 teach the ClearML workflow, not to build a real classifier:
 
   * `Task.init(...)` gives you automatic tracking with ~2 lines.
@@ -10,8 +10,8 @@ teach the ClearML workflow, not to build a real classifier:
     GPU queue, where a clearml-agent on a MIG slice picks it up. 30 attendees submitting at once
     -> watch the scheduler share the H200(s) across everyone.
   * HuggingFace `Trainer(report_to=["clearml"])` streams loss/accuracy live into the SCALARS tab.
-  * `output_uri=True` + `CLEARML_LOG_MODEL=True` auto-register the trained checkpoint as an
-    output model, so Hours 3-4 (compare + registry) have something to work with.
+  * A per-epoch callback registers one clean named model each epoch ("ViT-Tiny PlantVillage -
+    epoch N") to `output_uri`, so Hours 3-4 (compare + registry) have models to work with.
 
 Run it from a notebook cell (`%run workshop/hour2_finetune_vit.py`) or the terminal. On the FIRST
 call it configures the task locally then enqueues itself to the TRAIN_QUEUE (default `gpu-18gb`);
@@ -45,7 +45,7 @@ if not (os.environ.get("CLEARML_API_ACCESS_KEY") and os.environ.get("WORKSHOP_US
 os.environ.setdefault("CLEARML_LOG_MODEL", "True")
 
 import numpy as np
-from clearml import Task, Dataset
+from clearml import Task, Dataset, OutputModel
 
 # Which GPU queue attendees submit to. This server's MIG tiers are:
 #   gpu-18gb  (2 slots, 18 GB each)  · gpu-35gb (1) · gpu-71gb (1) · gpu-141gb (1, whole card)
@@ -61,18 +61,30 @@ EXPERIMENT_PROJECT = f"PlantVillage Workshop/{WORKSHOP_USER}"
 
 
 def main():
-    # Fail early with a clear message if the shared key wasn't pasted in (empty env -> 401 later).
-    if not (os.environ.get("CLEARML_API_ACCESS_KEY") and os.environ.get("CLEARML_API_SECRET_KEY")):
+    # Fail early (LOCALLY only) with a clear message if the shared key wasn't pasted in. On the agent
+    # this same script re-runs, but there credentials come from the agent's clearml.conf (NOT these
+    # env vars), so Task.running_locally() gates the check to avoid a false "keys are EMPTY" on remote.
+    if Task.running_locally() and not (
+        os.environ.get("CLEARML_API_ACCESS_KEY") and os.environ.get("CLEARML_API_SECRET_KEY")
+    ):
         raise SystemExit(
             "ClearML API keys are EMPTY. Paste the shared access/secret key into your credentials cell "
             "(and set WORKSHOP_USER to your name), then re-run."
         )
+
+    # Store THIS script standalone (copy the code into the task) instead of linking to a git repo,
+    # so the agent runs it WITHOUT cloning the repo — no git access/credentials needed. Must be
+    # called before Task.init.
+    Task.force_store_standalone_script()
 
     # ---- 1. Track everything (do this first, before heavy imports/work) ----
     task = Task.init(
         project_name=EXPERIMENT_PROJECT,   # your own project, from WORKSHOP_USER
         task_name="ViT-Tiny finetune",
         output_uri=True,            # upload the trained model to the ClearML file server
+        # Don't auto-register every torch.save (optimizer/scheduler/rng/etc.) as a "model" — we
+        # register one clean, named model PER EPOCH instead (see the callback below). Keeps it tidy.
+        auto_connect_frameworks={"pytorch": False},
     )
 
     # Hyperparameters we want to see/edit in the UI (Hour 3 clones this task and tweaks them).
@@ -80,7 +92,7 @@ def main():
         "model_name": "WinKawaks/vit-tiny-patch16-224",
         "dataset_project": "PlantVillage",
         "dataset_name": "plantdisease_demo",
-        "num_train_epochs": 2,
+        "num_train_epochs": 3,
         "learning_rate": 5e-4,
         "train_batch_size": 32,
         "eval_batch_size": 32,
@@ -111,6 +123,7 @@ def main():
         AutoImageProcessor,
         AutoModelForImageClassification,
         Trainer,
+        TrainerCallback,
         TrainingArguments,
     )
 
@@ -193,13 +206,27 @@ def main():
         learning_rate=params["learning_rate"],
         per_device_train_batch_size=params["train_batch_size"],
         per_device_eval_batch_size=params["eval_batch_size"],
-        eval_strategy="epoch",
-        save_strategy="epoch",
+        eval_strategy="epoch",     # still eval each epoch -> loss/accuracy scalars for Hour 3
+        save_strategy="no",        # no per-epoch checkpoints (we save/register one final model below)
         logging_steps=10,
         seed=params["seed"],
         remove_unused_columns=False,     # keep the 'image' column for our transform
         report_to=["clearml"],
     )
+
+    # Save each epoch's model + image processor and record its eval accuracy. We register the models
+    # AFTER training (below) so we can make the BEST epoch the task's output model.
+    epoch_saves = []   # (accuracy, epoch, weights_dir)
+
+    class SavePerEpoch(TrainerCallback):
+        def on_evaluate(self, args, state, control, metrics=None, **kw):
+            epoch = int(round(state.epoch))                    # 1.0 after epoch 1 -> 1
+            acc = float((metrics or {}).get("eval_accuracy", 0.0))
+            d = os.path.join("epoch_ckpts", f"epoch_{epoch}")
+            model.save_pretrained(d)                           # config.json + model.safetensors
+            processor.save_pretrained(d)                       # preprocessor_config.json (reloadable)
+            epoch_saves.append((acc, epoch, d))
+            print(f"epoch {epoch}: eval_accuracy={acc:.4f}")
 
     trainer = Trainer(
         model=model,
@@ -208,11 +235,19 @@ def main():
         eval_dataset=ds["test"],
         data_collator=collate,
         compute_metrics=compute_metrics,
+        callbacks=[SavePerEpoch()],
     )
-
     trainer.train()
-    metrics = trainer.evaluate()
-    print(f"final eval metrics: {metrics}")
+
+    # ---- 6. Register EVERY epoch as a model (all show in the project's MODELS table). Register in
+    #         ASCENDING accuracy order so the BEST epoch is registered LAST -> it becomes the task's
+    #         output model, i.e. the ARTIFACTS section shows the BEST run, not just the last one. ----
+    epoch_saves.sort(key=lambda r: r[0])   # ascending by accuracy (best last)
+    for acc, epoch, d in epoch_saves:
+        OutputModel(task=task, name=f"ViT-Tiny PlantVillage - epoch {epoch} (acc {acc:.3f})",
+                    framework="PyTorch").update_weights_package(weights_path=d)
+    best_acc, best_epoch, _ = epoch_saves[-1]
+    print(f"best epoch: {best_epoch} (accuracy {best_acc:.4f}) -> task output model")
     print(f"Task ID: {task.id}")
 
 

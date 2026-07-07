@@ -19,8 +19,11 @@ Colab (Google cloud) --creds--> ClearML server (202.131.110.56) --gpu-18gb queue
 ## Still to do — ordered checklist
 
 ### 0. (Off the VM) Push the workshop repo to GitHub
-Colab clones the code from a public/accessible GitHub repo. Make sure `workshop/` is pushed and note
-the URL (attendees will `!git clone` it). **Do not** commit `.env` or `dataset/` (already gitignored).
+This is only so **attendees** can pull the files into Colab (`!git clone` / open notebooks). Make sure
+`workshop/` is pushed; **do not** commit `.env` or `dataset/` (already gitignored).
+> The training **agent needs NO git access**: the scripts call `Task.force_store_standalone_script()`,
+> so ClearML copies the single running script into the task and the agent runs it without cloning the
+> repo. No SSH keys / tokens on the agent, and the repo can even stay private.
 
 ### 1. Make the ClearML server reachable from the internet  ← critical for Colab
 Colab lives on Google's cloud, so it must reach all three ports (already bound to `0.0.0.0` per
@@ -52,7 +55,8 @@ configured hosts. They must be the **public IP**, not `localhost`, or the Colab 
 
 ### 3. Create ONE shared login + ONE shared API key  ← not done yet
 No per-attendee users. Add a single non-admin `workshop` user to `apiserver.conf`, restart, then
-generate **one** API key and share it with everyone. Full steps: **`shared_user.md`**.
+generate **one** API key and share it with everyone. (Add the user to the `auth.fixed_users` list in
+`apiserver.conf`, then restart the apiserver.)
 ```bash
 docker restart clearml-apiserver
 ```
@@ -79,10 +83,30 @@ python workshop/hour1_create_dataset.py --data-root dataset --skip-demo
 The task sets its own image + packages (`hour2` calls `set_base_docker("huggingface/transformers-pytorch-gpu:latest")`
 + `set_packages("requirements.txt")`), so there's **nothing to build**.
 - [ ] Confirm each agent was started with `--docker` (Docker mode). If any run in venv mode,
-      `set_base_docker` is ignored — restart them with `--docker`. Details: **`agent_setup.md`**.
+      `set_base_docker` is ignored — restart them with `--docker`.
 - [ ] `docker pull huggingface/transformers-pytorch-gpu:latest` on the agent hosts (avoid a slow
       first-task image pull) and set `agent.docker_pip_cache` so the extra-package install is cached.
 - [ ] Agent hosts need **outbound internet** (to pull the image + the extra pip deps).
+
+### 5b. 🔴 Agent host config MUST match the public host (else dataset/model 401)
+The ClearML **file server requires the auth token**, and the SDK only attaches it to the file-server
+host in the agent's config. Datasets/models are stored with the **public** URL `202.131.110.56:8081`
+(that's what Colab/attendees upload with). If the agent's `clearml.conf` uses a *different* host (e.g.
+the docker-internal `172.17.0.1:8081` or `localhost`), the agent downloads those URLs **without the
+token → HTTP 401**, and `Dataset.get()` fails with `Could not load Dataset ... state`.
+
+Fix — set the agent's `~/clearml.conf` to the **same public host** as everyone, then restart the agents:
+```hocon
+api {
+    web_server:   http://202.131.110.56
+    api_server:   http://202.131.110.56:8008
+    files_server: http://202.131.110.56:8081     # <-- must be the public IP, not 172.17.0.1/localhost
+    credentials { access_key: "...", secret_key: "..." }   # the shared/admin key
+}
+```
+- [ ] Verify the agent container can reach it: `curl -sI http://202.131.110.56:8081` from inside the
+      agent (usually fine — it already reaches the internet; watch for NAT-hairpin on the VM's own IP).
+- [ ] This fixes **both** directions: dataset download (Hour 2) and model upload/download (Hours 2 & 4).
 
 ### 6. Capacity & disk headroom
 - [ ] Ensure the server has RAM/disk for 30 concurrent users (Elasticsearch + MongoDB + file server).
@@ -109,7 +133,8 @@ The task sets its own image + packages (`hour2` calls `set_base_docker("huggingf
 | MIG queues + agents | ✅ done |
 | Internet reachability (80/8008/8081) | ⚠️ verify from Colab |
 | Public hosts configured | ⚠️ verify |
-| 1 shared user + key | ❌ create (`shared_user.md`) |
+| 1 shared user + key | ❌ create (`auth.fixed_users` in apiserver.conf) |
+| Agent host = public IP (files 401 fix) | 🔴 set agent `files_server` to `202.131.110.56:8081` |
 | Shared demo dataset | ✅ done (`plantdisease_demo`) |
 | Full catalog (optional) | ⬜ run `hour1_create_dataset.py --skip-demo` |
 | Agents in Docker mode | ⚠️ verify (`--docker`); image comes from the task |

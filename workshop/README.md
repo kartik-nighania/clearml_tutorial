@@ -26,9 +26,7 @@ open-source server, using a tiny Vision Transformer and the PlantVillage leaf-di
 | `hour2_finetune_vit.py` | attendee | ViT-Tiny fine-tune, submitted to the `gpu-18gb` queue |
 | `hour3_pick_best_model.ipynb` | attendee | clone/compare runs + pick the winner programmatically |
 | `hour4_publish_and_infer.py` | attendee | publish the winner, pull it back, classify new images |
-| `facilitator/agent_setup.md` | facilitator | GPU queues/agents (MIG) + remaining VM work checklist |
-| `facilitator/shared_user.md` | facilitator | one shared login + shared API key (no per-user accounts) |
-| `facilitator/VM_SETUP.md` | facilitator | full "what to do on the ClearML VM" checklist (Colab route) |
+| `facilitator/VM_SETUP.md` | facilitator | full "what to do on the ClearML VM" checklist (Colab route): shared user, datasets, agents, host config |
 | `requirements.txt` | facilitator | training deps installed into the HF container via `task.set_packages` |
 
 ---
@@ -80,9 +78,9 @@ pip install clearml clearml-agent
 pip install -r workshop/requirements.txt
 
 # GPU queues + MIG agents are ALREADY set up (gpu-18gb ×2, gpu-35gb, gpu-71gb, gpu-141gb).
-# Remaining VM work — see facilitator/agent_setup.md:
+# Remaining VM work — see facilitator/VM_SETUP.md:
 
-# 1. create ONE shared login + shared API key, then restart the apiserver   (facilitator/shared_user.md)
+# 1. create ONE shared login + shared API key, then restart the apiserver   (facilitator/VM_SETUP.md)
 docker restart clearml-apiserver
 
 # 2. the shared demo dataset is ALREADY registered (plantdisease_demo). Optionally add the full catalog:

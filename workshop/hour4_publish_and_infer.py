@@ -29,7 +29,7 @@ Usage:
 import argparse
 import os
 
-from clearml import InputModel, Model, OutputModel, Task
+from clearml import InputModel, Model, Task
 
 # Normalize: strip stray quotes/whitespace so a value like '""' counts as EMPTY.
 for _k in ("CLEARML_API_ACCESS_KEY", "CLEARML_API_SECRET_KEY", "WORKSHOP_USER"):
@@ -38,9 +38,12 @@ for _k in ("CLEARML_API_ACCESS_KEY", "CLEARML_API_SECRET_KEY", "WORKSHOP_USER"):
         os.environ[_k] = _v.strip().strip('"').strip("'").strip()
 
 # If creds / WORKSHOP_USER aren't in the environment, load them from a .env file (override empties).
-if not (os.environ.get("CLEARML_API_ACCESS_KEY") and os.environ.get("WORKSHOP_USER")):
+if not (
+    os.environ.get("CLEARML_API_ACCESS_KEY") and os.environ.get("WORKSHOP_USER")
+):
     try:
         from dotenv import load_dotenv, find_dotenv
+
         load_dotenv(find_dotenv(usecwd=True), override=True)
     except Exception:
         pass
@@ -60,9 +63,10 @@ def resolve_model_id(task_id=None, model_id=None):
         return model_id
     if task_id:
         t = Task.get_task(task_id=task_id)
-        chosen = t.output_model_id  # id of the task's most recent output model
-        if not chosen:
+        out = t.output_models_id or {}  # {output-slot-name: model_id}; robust to any slot name
+        if not out:
             raise SystemExit(f"task {task_id} has no output model registered")
+        chosen = list(out.values())[-1]  # the task's current (last-pointed) output model
         print(f"resolved output model of task {task_id} -> {chosen}")
         return chosen
     raise SystemExit("provide --task-id or --model-id")
@@ -70,11 +74,13 @@ def resolve_model_id(task_id=None, model_id=None):
 
 def publish(args):
     model_id = resolve_model_id(args.task_id, args.model_id)
-    model = OutputModel(base_model_id=model_id)  # reconstruct an OutputModel from the registry id
+    model = Model(model_id=model_id)  # existing registry model — no task needed (unlike OutputModel)
     model.tags = list(set((model.tags or []) + [WINNER_TAG]))
     model.publish()  # -> status 'published' (read-only); its creating task also becomes published
     print(f"published model {model_id} and tagged it '{WINNER_TAG}'.")
-    print("Open the ClearML UI -> Models to see it as read-only with full lineage.")
+    print(
+        "Open the ClearML UI -> Models to see it as read-only with full lineage."
+    )
 
 
 # --------------------------------------------------------------------------------------------------
@@ -101,26 +107,53 @@ def infer(args):
     from transformers import AutoImageProcessor, AutoModelForImageClassification
 
     # A task so the inference results (grid + confusion matrix) are tracked too.
-    task = Task.init(project_name=PROJECT, task_name="ViT-Tiny inference", task_type=Task.TaskTypes.inference)
+    # Standalone: store the code in the task, no git link (consistent with the other hours).
+    Task.force_store_standalone_script()
+    task = Task.init(
+        project_name=PROJECT,
+        task_name="ViT-Tiny inference",
+        task_type=Task.TaskTypes.inference,
+    )
 
     model_id = args.model_id or find_winner_model()
     input_model = InputModel(model_id=model_id)
-    task.connect(input_model)                       # record which model this run used (lineage)
-    weights_dir = input_model.get_local_copy()      # cached local path to the model folder
+    task.connect(input_model)  # record which model this run used (lineage)
+    weights_dir = (
+        input_model.get_local_copy()
+    )  # cached local path to the model folder
     print(f"pulled model {model_id} -> {weights_dir}")
 
-    processor = AutoImageProcessor.from_pretrained(weights_dir)
+    try:
+        processor = AutoImageProcessor.from_pretrained(weights_dir)
+    except Exception:
+        # older model packages may not bundle the image processor -> use the base ViT-Tiny's.
+        processor = AutoImageProcessor.from_pretrained("WinKawaks/vit-tiny-patch16-224")
     model = AutoModelForImageClassification.from_pretrained(weights_dir)
     model.eval()
     id2label = model.config.id2label
 
-    image_paths = [
-        os.path.join(args.images, f)
-        for f in sorted(os.listdir(args.images))
-        if f.lower().endswith((".jpg", ".jpeg", ".png"))
-    ]
+    if args.images:
+        image_paths = [
+            os.path.join(args.images, f)
+            for f in sorted(os.listdir(args.images))
+            if f.lower().endswith((".jpg", ".jpeg", ".png"))
+        ]
+    else:
+        # No folder given (typical in Colab) -> sample a few images from the shared demo dataset.
+        from clearml import Dataset
+
+        demo = Dataset.get(
+            dataset_project="PlantVillage",
+            dataset_name="plantdisease_demo",
+            alias="plantdisease_demo",
+        ).get_local_copy()
+        image_paths = []
+        for cls in sorted(os.listdir(demo)):
+            cdir = os.path.join(demo, cls)
+            if os.path.isdir(cdir):
+                image_paths += [os.path.join(cdir, f) for f in sorted(os.listdir(cdir))[:3]]
     if not image_paths:
-        raise SystemExit(f"no images found in {args.images}")
+        raise SystemExit("no images found (pass --images <folder>, or ensure plantdisease_demo exists)")
 
     logger = task.get_logger()
     import matplotlib.pyplot as plt
@@ -150,37 +183,60 @@ def infer(args):
         ax.set_title(pred_label, fontsize=10)
 
     plt.tight_layout()
-    logger.report_matplotlib_figure("Predictions", "new images", iteration=0, figure=fig)
+    # report_image=True -> send as a PNG to the DEBUG SAMPLES tab. Without it, ClearML tries to
+    # convert the figure to Plotly, which can't render imshow images (shows an empty plot).
+    logger.report_matplotlib_figure(
+        "Predictions", "new images", iteration=0, figure=fig, report_image=True
+    )
     plt.close(fig)
 
     # Confusion matrix only if we had ground-truth folder labels for all shown images.
     if len(truths) == len(preds) and truths:
         from sklearn.metrics import confusion_matrix
+
         cm = confusion_matrix(truths, preds, labels=list(range(len(id2label))))
         logger.report_confusion_matrix(
-            "Confusion matrix", "inference", matrix=cm,
-            xaxis="predicted", yaxis="true",
-            xlabels=list(id2label.values()), ylabels=list(id2label.values()),
+            "Confusion matrix",
+            "inference",
+            matrix=cm,
+            xaxis="predicted",
+            yaxis="true",
+            xlabels=list(id2label.values()),
+            ylabels=list(id2label.values()),
         )
         acc = sum(int(p == t) for p, t in zip(preds, truths)) / len(preds)
         logger.report_single_value("inference_accuracy", acc)
         print(f"inference accuracy on labeled images: {acc:.3f}")
 
-    print(f"reported predictions for {len(image_paths[:12])} images. Task ID: {task.id}")
+    print(
+        f"reported predictions for {len(image_paths[:12])} images. Task ID: {task.id}"
+    )
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Publish the winning model and run inference")
+    parser = argparse.ArgumentParser(
+        description="Publish the winning model and run inference"
+    )
     sub = parser.add_subparsers(dest="command", required=True)
 
     p_pub = sub.add_parser("publish", help="publish + tag the winning model")
-    p_pub.add_argument("--task-id", help="winning training task id (from Hour 3)")
+    p_pub.add_argument(
+        "--task-id", help="winning training task id (from Hour 3)"
+    )
     p_pub.add_argument("--model-id", help="model id (alternative to --task-id)")
     p_pub.set_defaults(func=publish)
 
-    p_inf = sub.add_parser("infer", help="pull the published winner and classify new images")
-    p_inf.add_argument("--images", required=True, help="folder of new leaf images")
-    p_inf.add_argument("--model-id", help="explicit model id (default: published model tagged 'winner')")
+    p_inf = sub.add_parser(
+        "infer", help="pull the published winner and classify new images"
+    )
+    p_inf.add_argument(
+        "--images",
+        help="folder of leaf images (optional; default: sample from the plantdisease_demo dataset)",
+    )
+    p_inf.add_argument(
+        "--model-id",
+        help="explicit model id (default: published model tagged 'winner')",
+    )
     p_inf.set_defaults(func=infer)
 
     args = parser.parse_args()
