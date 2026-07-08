@@ -20,8 +20,8 @@ Pattern adapted from: coding_examples/datasets/dataset_creation.py,
                       coding_examples/datasets/single_parent_child_dataset.py
 
 Usage (on the VM, from the repo root):
-    python workshop/hour1_create_dataset.py --data-root dataset
-    python workshop/hour1_create_dataset.py --data-root dataset --per-class 250 --project PlantVillage
+    python workshop/01_create_dataset.py --data-root dataset
+    python workshop/01_create_dataset.py --data-root dataset --per-class 250 --project PlantVillage
 """
 
 import argparse
