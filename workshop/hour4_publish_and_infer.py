@@ -6,11 +6,12 @@ Two halves:
   (A) publish  — take the winning training task (from Hour 3), publish its output model and tag it
                  `winner`, so it becomes a read-only, catalogued entry in the model registry.
   (B) infer    — pull that published model back by tag (no task/run needed — models are standalone
-                 registry entries), load it into ViT, and classify new leaf images. Predictions are
-                 reported back to ClearML as a labeled image grid + a confusion matrix.
+                 registry entries), load it into ViT, and classify new leaf images LOCALLY. Results
+                 (a predictions grid + a confusion matrix) are saved as PNGs and the accuracy printed;
+                 nothing is reported back to ClearML. The workshop notebook displays the PNGs inline.
 
 This shows the "reuse" side of the MLOps loop: a model registered by one run is consumed by a
-completely separate script/person.
+completely separate script/person, on any machine, with no ClearML task needed.
 
 Docs: https://clear.ml/docs/latest/docs/clearml_sdk/model_sdk
       https://clear.ml/docs/latest/docs/fundamentals/models
@@ -105,23 +106,16 @@ def infer(args):
     import torch
     from PIL import Image
     from transformers import AutoImageProcessor, AutoModelForImageClassification
+    import matplotlib
 
-    # A task so the inference results (grid + confusion matrix) are tracked too.
-    # Standalone: store the code in the task, no git link (consistent with the other hours).
-    Task.force_store_standalone_script()
-    task = Task.init(
-        project_name=PROJECT,
-        task_name="ViT-Tiny inference",
-        task_type=Task.TaskTypes.inference,
-    )
+    matplotlib.use("Agg")  # headless: we SAVE figures to PNGs (the notebook displays them inline)
+    import matplotlib.pyplot as plt
 
+    # Inference runs LOCALLY. ClearML is used only as a registry here (find + download the model);
+    # NO ClearML task is created and nothing is reported back. Results are saved as PNGs + printed.
     model_id = args.model_id or find_winner_model()
-    input_model = InputModel(model_id=model_id)
-    task.connect(input_model)  # record which model this run used (lineage)
-    weights_dir = (
-        input_model.get_local_copy()
-    )  # cached local path to the model folder
-    print(f"pulled model {model_id} -> {weights_dir}")
+    weights_dir = InputModel(model_id=model_id).get_local_copy()  # download weights to local cache
+    print(f"downloaded model {model_id} -> {weights_dir}")
     if not weights_dir or not os.path.isdir(weights_dir):
         raise SystemExit(
             f"Could not download weights for model {model_id} (get_local_copy -> {weights_dir!r}).\n"
@@ -163,62 +157,59 @@ def infer(args):
     if not image_paths:
         raise SystemExit("no images found (pass --images <folder>, or ensure plantdisease_demo exists)")
 
-    logger = task.get_logger()
-    import matplotlib.pyplot as plt
-
+    # ---- classify + build the predictions grid (predicted label as each image's title) ----
     preds, truths = [], []
     cols = 4
     rows = (min(len(image_paths), 12) + cols - 1) // cols
     fig = plt.figure(figsize=(4 * cols, 4 * rows))
-
     for i, path in enumerate(image_paths[:12]):
         img = Image.open(path).convert("RGB")
-        inputs = processor(images=img, return_tensors="pt")
         with torch.no_grad():
-            logits = model(**inputs).logits
+            logits = model(**processor(images=img, return_tensors="pt")).logits
         pred_id = int(logits.argmax(-1))
-        pred_label = id2label[pred_id]
         preds.append(pred_id)
-
-        # If the file lives in a class-named subfolder we can compute accuracy; otherwise skip.
-        parent = os.path.basename(os.path.dirname(path))
+        parent = os.path.basename(os.path.dirname(path))  # class folder = ground truth (if present)
         if parent in model.config.label2id:
             truths.append(model.config.label2id[parent])
-
         ax = fig.add_subplot(rows, cols, i + 1)
         ax.imshow(img)
         ax.axis("off")
-        ax.set_title(pred_label, fontsize=10)
-
+        ax.set_title(id2label[pred_id], fontsize=10)
     plt.tight_layout()
-    # report_image=True -> send as a PNG to the DEBUG SAMPLES tab. Without it, ClearML tries to
-    # convert the figure to Plotly, which can't render imshow images (shows an empty plot).
-    logger.report_matplotlib_figure(
-        "Predictions", "new images", iteration=0, figure=fig, report_image=True
-    )
+    pred_png = os.path.abspath("hour4_predictions.png")
+    fig.savefig(pred_png, dpi=110, bbox_inches="tight")
     plt.close(fig)
+    print(f"saved predictions grid -> {pred_png}")
 
-    # Confusion matrix only if we had ground-truth folder labels for all shown images.
+    # ---- confusion matrix + accuracy (only if the images came from class-named folders) ----
     if len(truths) == len(preds) and truths:
         from sklearn.metrics import confusion_matrix
 
         cm = confusion_matrix(truths, preds, labels=list(range(len(id2label))))
-        logger.report_confusion_matrix(
-            "Confusion matrix",
-            "inference",
-            matrix=cm,
-            xaxis="predicted",
-            yaxis="true",
-            xlabels=list(id2label.values()),
-            ylabels=list(id2label.values()),
-        )
+        labels = list(id2label.values())
+        fig2, ax = plt.subplots(figsize=(1.1 * len(labels) + 3, 1.1 * len(labels) + 2))
+        im = ax.imshow(cm, cmap="Blues")
+        ax.set_xticks(range(len(labels)))
+        ax.set_xticklabels(labels, rotation=45, ha="right", fontsize=8)
+        ax.set_yticks(range(len(labels)))
+        ax.set_yticklabels(labels, fontsize=8)
+        ax.set_xlabel("predicted")
+        ax.set_ylabel("true")
+        ax.set_title("Confusion matrix")
+        for r in range(len(labels)):
+            for c in range(len(labels)):
+                ax.text(c, r, cm[r, c], ha="center", va="center",
+                        color="white" if cm[r, c] > cm.max() / 2 else "black", fontsize=9)
+        fig2.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
+        plt.tight_layout()
+        cm_png = os.path.abspath("hour4_confusion_matrix.png")
+        fig2.savefig(cm_png, dpi=110, bbox_inches="tight")
+        plt.close(fig2)
         acc = sum(int(p == t) for p, t in zip(preds, truths)) / len(preds)
-        logger.report_single_value("inference_accuracy", acc)
-        print(f"inference accuracy on labeled images: {acc:.3f}")
+        print(f"saved confusion matrix -> {cm_png}")
+        print(f"inference accuracy on {len(preds)} labeled images: {acc:.3f}")
 
-    print(
-        f"reported predictions for {len(image_paths[:12])} images. Task ID: {task.id}"
-    )
+    print(f"done — classified {len(image_paths[:12])} images locally (no ClearML task created).")
 
 
 def main():
