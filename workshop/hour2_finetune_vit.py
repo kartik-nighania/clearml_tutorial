@@ -112,13 +112,13 @@ def main():
     if os.path.exists(_reqs):
         task.set_packages(_reqs)
 
-    # execute_remotely enqueues the fully-configured task; on most setups it also terminates the
-    # local process. In some environments (e.g. Colab's `!python`) it does NOT hard-exit, leaving the
-    # connected `params` as a non-subscriptable StubObject. So guard explicitly: once enqueued, bail
-    # out locally — the heavy training below runs only on the agent (where running_locally() is False).
+    # Enqueue this task to the GPU queue and stop local execution. On a healthy clearml this line
+    # terminates the local process and enqueues the task; the running_locally() guard is a safety net
+    # for environments where it doesn't hard-exit, so we never fall through to the training locally.
+    _task_id = task.id  # capture before execute_remotely, which can turn `task` into a StubObject
     task.execute_remotely(queue_name=TRAIN_QUEUE)
     if Task.running_locally():
-        print(f"Task enqueued to '{TRAIN_QUEUE}'. Training runs on the agent — watch it in the UI.")
+        print(f"Task {_task_id} enqueued to '{TRAIN_QUEUE}'. Watch it run in the UI.")
         return
 
     # ===== Everything below runs on the MIG-backed GPU agent =====
