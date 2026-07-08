@@ -14,15 +14,17 @@ teach the ClearML workflow, not to build a real classifier:
 
 Two ways to submit it to the queue:
 
-  * From a NOTEBOOK / Colab -> use the `clearml-task` CLI (the workshop notebook does this). Run it
-    from INSIDE workshop/ so the entry point is the bare filename (standalone mode writes the single
-    script to the agent's code/ root, so a `workshop/` prefix would point at a missing subdir):
-        cd workshop && clearml-task --project "PlantVillage Workshop/<you>" --name "ViT-Tiny finetune" \
-          --script hour2_finetune_vit.py --requirements requirements.txt \
-          --docker huggingface/transformers-pytorch-gpu:latest --queue gpu-18gb \
-          --skip-task-init --skip-repo-detection
+  * From a NOTEBOOK / Colab -> use the `clearml-task` CLI (the workshop notebook does this). The agent
+    CLONES the (public) repo over HTTPS and runs the script from it; `--script` is the path INSIDE the
+    repo, and `--branch main` avoids default-branch detection. Do NOT use `--skip-repo-detection` — it
+    uploads no code, so the agent's `code/` dir is empty and the script isn't found:
+        clearml-task --project "PlantVillage Workshop/<you>" --name "ViT-Tiny finetune" \
+          --repo https://github.com/kartik-nighania/clearml_tutorial.git --branch main \
+          --script workshop/hour2_finetune_vit.py --requirements workshop/requirements.txt \
+          --docker huggingface/transformers-pytorch-gpu:latest --queue gpu-18gb --skip-task-init
     (Do NOT `%run`/`!python` this from a notebook: `execute_remotely()` misbehaves from a Jupyter/
-    Colab context — it stubs the task instead of enqueuing it, so nothing reaches the queue.)
+    Colab context — it stubs the task instead of enqueuing it, so nothing reaches the queue. Also push
+    your changes to `main` first — the agent runs what's on GitHub, not your local copy.)
 
   * From a real TERMINAL -> `python workshop/hour2_finetune_vit.py`. The `execute_remotely()` call
     below configures the task locally, enqueues it to TRAIN_QUEUE (default `gpu-18gb`), and the
