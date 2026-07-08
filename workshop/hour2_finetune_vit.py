@@ -112,8 +112,14 @@ def main():
     if os.path.exists(_reqs):
         task.set_packages(_reqs)
 
-    # execute_remotely stops the local process and enqueues the fully-configured task.
+    # execute_remotely enqueues the fully-configured task; on most setups it also terminates the
+    # local process. In some environments (e.g. Colab's `!python`) it does NOT hard-exit, leaving the
+    # connected `params` as a non-subscriptable StubObject. So guard explicitly: once enqueued, bail
+    # out locally — the heavy training below runs only on the agent (where running_locally() is False).
     task.execute_remotely(queue_name=TRAIN_QUEUE)
+    if Task.running_locally():
+        print(f"Task enqueued to '{TRAIN_QUEUE}'. Training runs on the agent — watch it in the UI.")
+        return
 
     # ===== Everything below runs on the MIG-backed GPU agent =====
     import evaluate
