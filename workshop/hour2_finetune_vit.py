@@ -6,16 +6,27 @@ Fine-tunes a tiny Vision Transformer (WinKawaks/vit-tiny-patch16-224, ~5.7M para
 teach the ClearML workflow, not to build a real classifier:
 
   * `Task.init(...)` gives you automatic tracking with ~2 lines.
-  * `task.execute_remotely(queue_name=TRAIN_QUEUE)` stops the local run and ships the SAME task to a
-    GPU queue, where a clearml-agent on a MIG slice picks it up. 30 attendees submitting at once
-    -> watch the scheduler share the H200(s) across everyone.
+  * The task is shipped to a GPU queue, where a clearml-agent on a MIG slice picks it up. 30
+    attendees submitting at once -> watch the scheduler share the H200(s) across everyone.
   * HuggingFace `Trainer(report_to=["clearml"])` streams loss/accuracy live into the SCALARS tab.
   * A per-epoch callback registers one clean named model each epoch ("ViT-Tiny PlantVillage -
     epoch N") to `output_uri`, so Hours 3-4 (compare + registry) have models to work with.
 
-Run it from a notebook cell (`%run workshop/hour2_finetune_vit.py`) or the terminal. On the FIRST
-call it configures the task locally then enqueues itself to the TRAIN_QUEUE (default `gpu-18gb`);
-the agent re-runs the whole thing remotely.
+Two ways to submit it to the queue:
+
+  * From a NOTEBOOK / Colab -> use the `clearml-task` CLI (the workshop notebook does this). Run it
+    from INSIDE workshop/ so the entry point is the bare filename (standalone mode writes the single
+    script to the agent's code/ root, so a `workshop/` prefix would point at a missing subdir):
+        cd workshop && clearml-task --project "PlantVillage Workshop/<you>" --name "ViT-Tiny finetune" \
+          --script hour2_finetune_vit.py --requirements requirements.txt \
+          --docker huggingface/transformers-pytorch-gpu:latest --queue gpu-18gb \
+          --skip-task-init --skip-repo-detection
+    (Do NOT `%run`/`!python` this from a notebook: `execute_remotely()` misbehaves from a Jupyter/
+    Colab context — it stubs the task instead of enqueuing it, so nothing reaches the queue.)
+
+  * From a real TERMINAL -> `python workshop/hour2_finetune_vit.py`. The `execute_remotely()` call
+    below configures the task locally, enqueues it to TRAIN_QUEUE (default `gpu-18gb`), and the
+    agent re-runs the whole thing remotely.
 
 Docs: https://clear.ml/docs/latest/docs/integrations/transformers
       https://clear.ml/docs/latest/docs/getting_started/remote_execution
