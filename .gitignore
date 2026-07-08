@@ -225,5 +225,6 @@ dataset/
 # Local-only (kept on disk, never pushed): docs mirror, examples, and the Claude skill
 docs/
 coding_examples/
-.claude/
+coding_examples/**
+.claude/**
 architecture.md
