@@ -21,7 +21,11 @@ Two ways to submit it to the queue:
         clearml-task --project "PlantVillage Workshop/<you>" --name "ViT-Tiny finetune" \
           --repo https://github.com/kartik-nighania/clearml_tutorial.git --branch main \
           --script workshop/hour2_finetune_vit.py --requirements workshop/requirements.txt \
-          --docker huggingface/transformers-pytorch-gpu:latest --queue gpu-18gb --skip-task-init
+          --docker huggingface/transformers-pytorch-gpu:latest --queue gpu-18gb --skip-task-init \
+          --output-uri http://202.131.110.56:8081
+    (--output-uri is REQUIRED: without it the agent writes models to its local /tmp instead of the
+    file server, and Hour 4 can't download them. Task.init(output_uri=True) in this script is ignored
+    when clearml-task runs it remotely — the task's output_uri comes from --output-uri.)
     (Do NOT `%run`/`!python` this from a notebook: `execute_remotely()` misbehaves from a Jupyter/
     Colab context — it stubs the task instead of enqueuing it, so nothing reaches the queue. Also push
     your changes to `main` first — the agent runs what's on GitHub, not your local copy.)

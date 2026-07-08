@@ -122,6 +122,14 @@ def infer(args):
         input_model.get_local_copy()
     )  # cached local path to the model folder
     print(f"pulled model {model_id} -> {weights_dir}")
+    if not weights_dir or not os.path.isdir(weights_dir):
+        raise SystemExit(
+            f"Could not download weights for model {model_id} (get_local_copy -> {weights_dir!r}).\n"
+            f"Its weights were likely saved to the training agent's LOCAL disk instead of the file "
+            f"server (model uri like 'file:///tmp/...'). Re-run Hour 2 with an output destination set:\n"
+            f"    clearml-task ... --output-uri http://202.131.110.56:8081\n"
+            f"then re-pick the winner (Hour 3), re-publish, and run infer again."
+        )
 
     try:
         processor = AutoImageProcessor.from_pretrained(weights_dir)
