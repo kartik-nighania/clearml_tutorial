@@ -12,6 +12,7 @@
 
 clearml>=1.16
 clearml-agent>=1.9          # only needed on the VM if you also run an agent from here
+python-dotenv
 
 # training / model
 torch>=2.1
